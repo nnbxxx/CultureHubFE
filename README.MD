@@ -1,4 +1,4 @@
-**_ | Base React Test Fresher | _**
+**_ | Base React Culture Hub | _**
 
 - React 18
 - React Router 6
