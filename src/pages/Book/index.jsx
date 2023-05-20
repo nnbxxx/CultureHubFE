@@ -118,7 +118,7 @@ const BookPage = (props) => {
                     <div className='brand'>
                       Author <a>{dataBook?.author}</a>
                     </div>
-                    <h1 className='title'>{dataBook?.mainText}</h1>
+                    <h1 className='title '>{dataBook?.mainText}</h1>
                     <div className='below-title'>
                       <Rate
                         disabled

@@ -1,0 +1,45 @@
+.achievement-list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  .achievement-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 10px;
+    min-height: 225px;
+    .achievement-name {
+    }
+    .achievement-timer {
+      font-size: 14px;
+      color: #939bb4;
+    }
+  }
+}
+.achievement-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.achievement-item-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  min-height: 225px;
+  .achievement-name-modal {
+  }
+  .achievement-timer-modal {
+    font-size: 14px;
+    color: #939bb4;
+  }
+}
