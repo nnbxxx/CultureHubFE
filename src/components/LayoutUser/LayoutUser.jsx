@@ -230,13 +230,15 @@ const LayoutUser = (props) => {
               marginTop: "20px",
             }}
           >
-            <div
-              className='site-layout-content'
-              style={{
-                background: colorBgContainer,
-              }}
-            >
-              <div style={{ minHeight: "100vh" }}>
+            <div className='site-layout-content'>
+              <div
+                style={{
+                  minHeight: "60vh",
+                  // background: colorBgContainer,
+                  padding: "0 20px",
+                  borderRadius: 20,
+                }}
+              >
                 <Outlet context={[filter, searchBook]} />
               </div>
             </div>

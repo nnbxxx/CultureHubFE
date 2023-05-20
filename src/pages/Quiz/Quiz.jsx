@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Layout, Progress, theme } from "antd";
+import { Card, Col, Layout, Progress, Row, theme } from "antd";
 import HeaderUser from "../../components/Header/HeaderUser";
 import { Content } from "antd/es/layout/layout";
 import FooterUser from "../../components/Footer/FooterUser";

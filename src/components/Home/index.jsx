@@ -1,4 +1,14 @@
-import { Col, Divider, Pagination, Rate, Row, Spin, Tabs } from "antd";
+import {
+  Card,
+  Col,
+  Divider,
+  Pagination,
+  Rate,
+  Row,
+  Spin,
+  Tabs,
+  theme,
+} from "antd";
 import "./index.scss";
 import { useEffect, useState } from "react";
 import { callGetBooksWithPaginate } from "../../service/api";
@@ -100,70 +110,99 @@ const Home = (props) => {
   useEffect(() => {
     fetchListBook();
   }, [currentPage, pageSize, searchBook, sort, filter]);
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
   return (
-    <Col>
-      <Row>
-        <Tabs defaultActiveKey='1' items={itemsTab} onChange={onChangeTab} />
-      </Row>
-      <Spin tip='Loading' size='large' spinning={isLoading}>
-        <Row className='customize-row'>
-          {listBook &&
-            listBook.length > 0 &&
-            listBook.map((item) => {
-              return (
-                <>
-                  <div
-                    className='column'
-                    key={item.thumbnail}
-                    onClick={() => {
-                      handleDirectDetailBook(item);
-                    }}
-                  >
-                    <div className='wrapper'>
-                      <div className='thumbnail'>
-                        <img
-                          src={`${baseURL}/images/book/${item.thumbnail}`}
-                          alt='thumbnail book'
-                        />
-                      </div>
-                      <div className='text'>{item.mainText}</div>
-                      <div className='price'>
-                        {new Intl.NumberFormat("vi-VN", {
-                          style: "currency",
-                          currency: "VND",
-                        }).format(item.price)}
-                      </div>
-                      <div className='rating'>
-                        <Rate
-                          value={5}
-                          disabled
-                          style={{ color: "#ffce3d", fontSize: 10 }}
-                        />
-                        <span>Sold: {item.sold}</span>
+    <>
+      <div
+        style={{
+          marginBottom: 20,
+          backgroundColor: colorBgContainer,
+          padding: "0 20px",
+          borderRadius: 8,
+        }}
+      >
+        <Row>
+          <Tabs defaultActiveKey='1' items={itemsTab} onChange={onChangeTab} />
+        </Row>
+        <Spin tip='Loading' size='large' spinning={isLoading}>
+          <Row className='customize-row'>
+            {listBook &&
+              listBook.length > 0 &&
+              listBook.map((item) => {
+                return (
+                  <>
+                    <div
+                      className='column'
+                      key={item.thumbnail}
+                      onClick={() => {
+                        handleDirectDetailBook(item);
+                      }}
+                    >
+                      <div className='wrapper'>
+                        <div className='thumbnail'>
+                          <img
+                            src={`${baseURL}/images/book/${item.thumbnail}`}
+                            alt='thumbnail book'
+                          />
+                        </div>
+                        <div className='text'>{item.mainText}</div>
+                        <div className='price'>
+                          {new Intl.NumberFormat("vi-VN", {
+                            style: "currency",
+                            currency: "VND",
+                          }).format(item.price)}
+                        </div>
+                        <div className='rating'>
+                          <Rate
+                            value={5}
+                            disabled
+                            style={{ color: "#ffce3d", fontSize: 10 }}
+                          />
+                          <span>Sold: {item.sold}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </>
-              );
-            })}
+                  </>
+                );
+              })}
+          </Row>
+        </Spin>
+        <Divider />
+        <Row style={{ display: "flex", justifyContent: "center" }}>
+          <Pagination
+            current={currentPage}
+            total={toltalPage}
+            responsive
+            pageSize={pageSize}
+            pageSizeOptions={["5", "10", "20"]}
+            showSizeChanger
+            onChange={(page, pageSize) => {
+              setCurrentPage(page);
+              setPageSize(pageSize);
+            }}
+          />
         </Row>
-      </Spin>
-      <Divider />
-      <Row style={{ display: "flex", justifyContent: "center" }}>
-        <Pagination
-          current={currentPage}
-          total={toltalPage}
-          responsive
-          pageSize={pageSize}
-          pageSizeOptions={["2", "5", "10"]}
-          showSizeChanger
-          onChange={(page, pageSize) => {
-            setCurrentPage(page);
-            setPageSize(pageSize);
-          }}
-        />
+        <Divider />
+      </div>
+      <Row gutter={[20, 20]}>
+        <Col span={24}>
+          <Card title='Card title'>
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        <Col span={24}>
+          <Card title='Card title'>
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
       </Row>
-    </Col>
+    </>
   );
 };
 export default Home;

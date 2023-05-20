@@ -203,7 +203,7 @@ const HeaderUser = (props) => {
           }}
         >
           <FaReact />
-          CultureHub
+          <span style={{ fontSize: 15 }}> CultureHub</span>
         </div>
 
         <div className='navbar-search'>

@@ -43,3 +43,7 @@
     color: #939bb4;
   }
 }
+.highlight-first-letter::first-letter {
+  color: black;
+  font-weight: bold;
+}

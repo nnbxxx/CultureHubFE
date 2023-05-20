@@ -9,6 +9,8 @@ import { MailOutlined, PhoneOutlined } from "@ant-design/icons";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import AchievementItem from "./AchievementItem";
+import Ranking from "./Ranking";
+import "./index.scss";
 const listAchievementDay = [
   {
     src: "../../../public/Achievenment/badge-Day.svg",
@@ -536,6 +538,198 @@ const listAchievementLike = [
       "Tặng thưởng vì đã tham gia nền tảng 5k Lượt Thích trên nền tảng",
   },
 ];
+const columnsPoint = [
+  {
+    title: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        #
+      </div>
+    ),
+    dataIndex: "id",
+    width: "8%",
+    render(text, record) {
+      return (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {text}
+        </div>
+      );
+    },
+  },
+  {
+    title: <div>Username</div>,
+    dataIndex: "username",
+    width: "72.5%",
+    render(text, record) {
+      return (
+        <div style={{ color: "red" }} className='highlight-first-letter'>
+          {text}
+        </div>
+      );
+    },
+  },
+  {
+    title: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        Point
+      </div>
+    ),
+    dataIndex: "point",
+    render(text, record) {
+      return (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {text}
+        </div>
+      );
+    },
+  },
+];
+const dataPoint = [
+  {
+    id: "1",
+    username: "admin",
+    point: "1500",
+  },
+  {
+    id: "2",
+    username: "dquynh_2811",
+    point: "759",
+  },
+  {
+    id: "3",
+    username: "Mike4235",
+    point: "452",
+  },
+  {
+    id: "4",
+    username: "darkkcyan",
+    point: "209",
+  },
+  {
+    id: "5",
+    username: "Mondeus",
+    point: "173",
+  },
+];
+const columnsContribute = [
+  {
+    title: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        #
+      </div>
+    ),
+    dataIndex: "id",
+    width: "8%",
+    render(text, record) {
+      return (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {text}
+        </div>
+      );
+    },
+  },
+  {
+    title: <div>Username</div>,
+    dataIndex: "username",
+    width: "72.5%",
+    render(text, record) {
+      return (
+        <div style={{ color: "red" }} className='highlight-first-letter'>
+          {text}
+        </div>
+      );
+    },
+  },
+  {
+    title: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        Contrib.
+      </div>
+    ),
+    dataIndex: "contrib",
+    render(text, record) {
+      return (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {text}
+        </div>
+      );
+    },
+  },
+];
+const dataContribute = [
+  {
+    id: "1",
+    username: "admin",
+    contrib: "150",
+  },
+  {
+    id: "2",
+    username: "dquynh_2811",
+    contrib: "79",
+  },
+  {
+    id: "3",
+    username: "Mike4235",
+    contrib: "42",
+  },
+  {
+    id: "4",
+    username: "darkkcyan",
+    contrib: "29",
+  },
+  {
+    id: "5",
+    username: "Mondeus",
+    contrib: "13",
+  },
+];
 const AchievementPage = () => {
   const {
     token: { colorBgContainer },
@@ -569,7 +763,16 @@ const AchievementPage = () => {
               <Card>
                 <Meta
                   avatar={<Avatar src={urlAvatar} size={70} />}
-                  title={user.fullName}
+                  title={
+                    <>
+                      <div
+                        style={{ color: "red" }}
+                        className='highlight-first-letter'
+                      >
+                        {user.fullName}
+                      </div>
+                    </>
+                  }
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -582,7 +785,7 @@ const AchievementPage = () => {
                           justifyContent: "space-between",
                         }}
                       >
-                        <span>Total Point: 150</span>
+                        <span>Total Point: 1500</span>
                         <Button
                           type='default'
                           size='small'
@@ -618,6 +821,11 @@ const AchievementPage = () => {
                 />
               </Card>
             </Col>
+            <Ranking
+              data={dataPoint}
+              columns={columnsPoint}
+              type={`Top users `}
+            />
             <Col span={16}>
               <Card title='Chuỗi Tuần'>
                 {" "}
@@ -628,6 +836,11 @@ const AchievementPage = () => {
                 />
               </Card>
             </Col>
+            <Ranking
+              data={dataContribute}
+              columns={columnsContribute}
+              type={`Top contributors`}
+            />
             <Col span={16}>
               <Card title='Số cuộc thi tham gia '>
                 <AchievementItem
