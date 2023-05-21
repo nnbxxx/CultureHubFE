@@ -100,7 +100,7 @@ const HeaderUser = (props) => {
       setIsShowModalManageUser(true);
     }
     if (e.key === "5") {
-      navigate(`/achievement/${user.id}`);
+      navigate(`/achievement/id=${user.id}`);
     }
   };
   const items = [

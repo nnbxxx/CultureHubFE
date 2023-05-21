@@ -26,6 +26,7 @@ import { ManageOrders } from "./pages/Admin/Orders/ManageOrders";
 import Quiz from "./pages/Quiz/Quiz";
 import { FloatButton } from "antd";
 import AchievementPage from "./pages/Achievement/AchievementPage";
+import BlogPage from "./pages/Blog";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
   {
     path: "/achievement/:id",
     element: <AchievementPage />,
+  },
+  {
+    path: "/blog/:id",
+    element: <BlogPage />,
   },
 ]);
 export default function App() {

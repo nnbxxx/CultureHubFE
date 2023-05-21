@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   Col,
   Divider,
@@ -8,11 +9,15 @@ import {
   Spin,
   Tabs,
   theme,
+  Typography,
 } from "antd";
+const { Text, Link } = Typography;
 import "./index.scss";
 import { useEffect, useState } from "react";
 import { callGetBooksWithPaginate } from "../../service/api";
 import { useNavigate, useOutletContext } from "react-router-dom";
+import Blog from "./Blog";
+import QuizItem from "./QuizItem";
 const baseURL = import.meta.env.VITE_BACK_END_URL;
 const nonAccentVietnamese = (str) => {
   str = str.replace(/A|Á|À|Ã|Ạ|Â|Ấ|Ầ|Ẫ|Ậ|Ă|Ắ|Ằ|Ẵ|Ặ/g, "A");
@@ -52,7 +57,89 @@ const convertSlug = (str) => {
     .replace(/-+/g, "-"); // collapse dashes
   return str;
 };
-
+const dataBlog = [
+  {
+    title:
+      "Higher education faculty discover new ways to create engaging review sessions at the Kahoot! EDU Meetup!",
+    description:
+      "At our first higher education meetup last week we heard from hundreds of higher ed faculty around the world using Kahoot! in their courses for engaging review and exam prep.",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+  },
+  {
+    title:
+      "Gamified learning experiences were the main character at this year’s Kahoot! EDU Meetup!",
+    description:
+      "Yesterday, we learned why teachers around the world are gaming and learning with their students to boost engagement and learning retention!",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+  },
+  {
+    title:
+      "Bring a new level of powerful pedagogy to classrooms with Kahoot!’s game modes",
+    description:
+      "Disguise content learning in a game-oriented, student-centered dynamic with all new game modes on Kahoot!",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+  },
+  {
+    title: "Celebrating World Teachers’ Day with Kahoot!",
+    description:
+      "Thanks for an awesome year of milestones and memories! We appreciate you, teachers!",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+  },
+  {
+    title:
+      "Student-centered learning was front and center at the Kahoot! EDU Fall Meetup 2022",
+    description:
+      "Teachers from around the world gathered yesterday to learn about new approaches to student-centered learning from shared teacher stories, Kahoot! ambassadors, and new Kahoot! feature demos!",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+  },
+];
+const dataQuiz = [
+  {
+    title: "Python Programming Warm-Up",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    description: {
+      play: "5.9k",
+      player: "21.4k",
+      numberQuestion: 11,
+    },
+  },
+  {
+    title: "Ready, Set. . . Draw!",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    description: {
+      play: "5.9k",
+      player: "21.1k",
+      numberQuestion: 10,
+    },
+  },
+  {
+    title: "What's the Weather?",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    description: {
+      play: "5.4k",
+      player: "27.5k",
+      numberQuestion: 8,
+    },
+  },
+  {
+    title: "Python Programming Warm-Up",
+    urlImg:
+      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    description: {
+      play: "556",
+      player: "4k",
+      numberQuestion: 16,
+    },
+  },
+];
 const Home = (props) => {
   const onChangeTab = (key) => {
     setSort(key);
@@ -188,17 +275,86 @@ const Home = (props) => {
       </div>
       <Row gutter={[20, 20]}>
         <Col span={24}>
-          <Card title='Card title'>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
+          <Card
+            title={
+              <div
+                style={{
+                  color: "#333",
+                  fontSize: 14,
+                  fontWeight: 700,
+                  letterSpacing: 0.2,
+                }}
+              >
+                What's New
+              </div>
+            }
+          >
+            {dataBlog &&
+              dataBlog.length > 0 &&
+              dataBlog.map((item) => {
+                return <Blog data={item} />;
+              })}
+            <p
+              style={{
+                textAlign: "center",
+                color: "#1368ce",
+                textDecoration: "underline",
+                cursor: "pointer",
+                fontSize: 14,
+                fontWeight: 700,
+                marginBottom: -15,
+              }}
+            >
+              Show More
+            </p>
           </Card>
         </Col>
         <Col span={24}>
-          <Card title='Card title'>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
+          <Card
+            title={
+              <div
+                style={{
+                  color: "#333",
+                  fontSize: 14,
+                  fontWeight: 700,
+                  letterSpacing: 0.2,
+                }}
+              >
+                Top picks
+              </div>
+            }
+          >
+            {dataQuiz &&
+              dataQuiz.length > 0 &&
+              dataQuiz.map((item) => {
+                return <QuizItem data={item} />;
+              })}
+
+            <Text
+              style={{
+                fontSize: 16,
+                color: "#333",
+                letterSpacing: 0.2,
+                fontWeight: 700,
+                textAlign: "center",
+                display: "block",
+              }}
+            >
+              More awesomeness awaits! Search millions of CultureHub on any
+              topic
+            </Text>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginTop: 15,
+              }}
+            >
+              <Button type='primary' size='large'>
+                Discover CultureHub
+              </Button>
+            </div>
           </Card>
         </Col>
       </Row>
