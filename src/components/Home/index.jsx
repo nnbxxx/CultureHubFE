@@ -131,10 +131,10 @@ const Home = (props) => {
     },
   ];
   const [searchBook, filter] = useOutletContext();
-  const [listBook, setlistBook] = useState([]);
+  const [listBook, setListBook] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(5);
-  const [toltalPage, setToltalPage] = useState(0);
+  const [totalPage, setTotalPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [sort, setSort] = useState("&sort=-sold");
 
@@ -146,8 +146,8 @@ const Home = (props) => {
     setIsLoading(true);
     const res = await callGetBooksWithPaginate(query);
     if (res && res.data) {
-      setlistBook(res.data.result);
-      setToltalPage(res.data.meta.total);
+      setListBook(res.data.result);
+      setTotalPage(res.data.meta.total);
       setTimeout(() => {
         setIsLoading(false);
       }, 200);
@@ -224,7 +224,7 @@ const Home = (props) => {
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Pagination
             current={currentPage}
-            total={toltalPage}
+            total={totalPage}
             responsive
             pageSize={pageSize}
             pageSizeOptions={["5", "10", "20"]}
@@ -341,7 +341,7 @@ const Home = (props) => {
 };
 export default Home;
 /*
- total: toltalPage,
+ total: totalPage,
 showSizeChanger: true,
 current: currentPage,
 pageSize: pageSize,

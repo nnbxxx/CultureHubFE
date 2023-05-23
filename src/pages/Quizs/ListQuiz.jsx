@@ -1,13 +1,47 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, Layout, Progress, Row, theme } from "antd";
+import {
+  Card,
+  Col,
+  Layout,
+  Progress,
+  Row,
+  Tabs,
+  theme,
+  Avatar,
+  Badge,
+  message,
+  Button,
+} from "antd";
 import HeaderUser from "../../components/Header/HeaderUser";
 import { Content } from "antd/es/layout/layout";
 import FooterUser from "../../components/Footer/FooterUser";
-
+import QuizItem from "./QuizItem";
+import { v4 as uuidv4 } from "uuid";
+const { Meta } = Card;
+const itemsTab = [
+  {
+    key: "1",
+    label: `All Quiz`,
+    children: <></>,
+  },
+  {
+    key: "2",
+    label: `Popular`,
+    children: <></>,
+  },
+  {
+    key: "3",
+    label: `New`,
+    children: <></>,
+  },
+];
 const ListQuiz = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+  const handleDirectDetailQuiz = () => {
+    navigate(`/book/id=${uuidv4()}`);
+  };
   return (
     <Layout className='layout'>
       <HeaderUser />
@@ -24,7 +58,41 @@ const ListQuiz = () => {
             background: colorBgContainer,
           }}
         >
-          ListQuiz
+          <Row>
+            <Tabs defaultActiveKey='1' items={itemsTab} onChange={null} />
+          </Row>
+          <div
+            style={{
+              display: "grid",
+              gap: 30,
+              gridTemplateColumns: " repeat(4, minmax(0, 1fr))",
+            }}
+          >
+            <QuizItem />
+            <QuizItem />
+            <QuizItem />
+            <QuizItem />
+            <QuizItem />
+            <QuizItem />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 45,
+            }}
+          >
+            <Button
+              type='primary'
+              size='large'
+              onClick={() => {
+                navigate("/quiz");
+              }}
+            >
+              Show More
+            </Button>
+          </div>
         </div>
       </Content>
       <FooterUser />

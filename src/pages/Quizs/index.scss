@@ -1,0 +1,11 @@
+.like {
+  svg {
+    color: yellow;
+  }
+}
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

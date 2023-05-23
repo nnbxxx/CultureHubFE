@@ -109,6 +109,7 @@ const HeaderUser = (props) => {
     const slug = convertSlug(book.mainText);
     navigate(`/book/${slug}?id=${book._id}`);
   };
+
   const contentPopover = (
     <>
       <div className='list-books'>

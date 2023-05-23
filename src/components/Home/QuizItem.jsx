@@ -2,7 +2,9 @@ import { Avatar, Col, Image, Row, Typography } from "antd";
 import Meta from "antd/es/card/Meta";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 const { Text, Link, Title, Paragraph } = Typography;
+import { v4 as uuidv4 } from "uuid";
 const QuizItem = (props) => {
   const [isUnderline, setIsUnderline] = useState(false);
   const user = useSelector((state) => state.account.user);
@@ -10,6 +12,10 @@ const QuizItem = (props) => {
     user.avatar
   }`;
   const { data } = props;
+  const navigate = useNavigate();
+  const handleDirectPlayQuiz = () => {
+    navigate(`/quiz/id=${uuidv4()}`);
+  };
   return (
     <>
       <Row
@@ -24,6 +30,9 @@ const QuizItem = (props) => {
         }}
         onMouseLeave={() => {
           setIsUnderline(false);
+        }}
+        onClick={() => {
+          handleDirectPlayQuiz();
         }}
       >
         <Col span={3} style={{ position: "relative" }}>
