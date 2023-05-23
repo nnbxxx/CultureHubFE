@@ -9,10 +9,10 @@ import moment from "moment/moment";
 import { DetailOrder } from "./OrdersDetail";
 export const ManageOrders = () => {
   const [query, setQuery] = useState("");
-  const [listOrder, setlistOrder] = useState([]);
+  const [listOrder, setListOrder] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(2);
-  const [toltalPage, setToltalPage] = useState(0);
+  const [totalPage, setTotalPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("&sort=-updatedAt");
@@ -107,8 +107,8 @@ export const ManageOrders = () => {
     setIsLoading(true);
     const res = await callGetOrdersWithPaginate(query);
     if (res && res.data) {
-      setlistOrder(res.data.result);
-      setToltalPage(res.data.meta.total);
+      setListOrder(res.data.result);
+      setTotalPage(res.data.meta.total);
       setTimeout(() => {
         setIsLoading(false);
       }, 10);
@@ -144,7 +144,7 @@ export const ManageOrders = () => {
       <Table
         style={{ width: "100%" }}
         scroll={{
-          y: 300,
+          y: 500,
         }}
         columns={columnsTable}
         rowKey='_id'
@@ -154,7 +154,7 @@ export const ManageOrders = () => {
         onChange={onChange}
         loading={isLoading}
         pagination={{
-          total: toltalPage,
+          total: totalPage,
           showSizeChanger: true,
           current: currentPage,
           pageSize: pageSize,

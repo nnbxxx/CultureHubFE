@@ -27,6 +27,9 @@ import Quiz from "./pages/Quiz/Quiz";
 import { FloatButton } from "antd";
 import AchievementPage from "./pages/Achievement/AchievementPage";
 import BlogPage from "./pages/Blog";
+import ManageBlog from "./pages/Admin/Blog/ManageBlog";
+import BlogsPage from "./pages/Blogs";
+import ListQuiz from "./pages/Quizs/ListQuiz";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -78,6 +81,10 @@ const router = createBrowserRouter([
         path: "order",
         element: <ManageOrders />,
       },
+      {
+        path: "blog",
+        element: <ManageBlog />,
+      },
     ],
   },
   {
@@ -89,7 +96,7 @@ const router = createBrowserRouter([
     element: <RegisterPage />,
   },
   {
-    path: "/quiz",
+    path: "/quiz/:id",
     element: <Quiz />,
   },
   {
@@ -99,6 +106,14 @@ const router = createBrowserRouter([
   {
     path: "/blog/:id",
     element: <BlogPage />,
+  },
+  {
+    path: "/blog",
+    element: <BlogsPage />,
+  },
+  {
+    path: "/quiz",
+    element: <ListQuiz />,
   },
 ]);
 export default function App() {

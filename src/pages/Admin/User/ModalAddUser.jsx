@@ -11,7 +11,7 @@ const ModalAddUser = (props) => {
     setLoading(true);
     const res = await callPostCreateUser(fullName, email, password, phone);
     if (res && res.data) {
-      message.success("Create User Sucessful");
+      message.success("Create User Successful");
     } else if (res && res.error) {
       notification.error({
         message: `Error`,

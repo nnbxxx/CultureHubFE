@@ -860,7 +860,7 @@ const AchievementPage = () => {
               </Card>
             </Col>
             <Col span={16}>
-              <Card title='Thành tựu đặc biệt'>Achievement Content</Card>
+              <Card title='Thành tựu đặc biệt'>Coming Soon ...</Card>
             </Col>
           </Row>
         </div>

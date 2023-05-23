@@ -220,7 +220,7 @@ export const TableUser = () => {
           dataSource={listUser}
           style={{ width: "100%" }}
           scroll={{
-            y: 300,
+            y: 500,
           }}
           rowKey='_id'
           onChange={onChange}

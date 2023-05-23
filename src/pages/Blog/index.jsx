@@ -551,13 +551,13 @@ const BlogPage = () => {
                         position: "absolute",
                         top: "92%",
                         right: 70,
+                        cursor: "pointer",
                       }}
                     >
                       <Text
                         style={{
                           color: "#46178F",
                           fontWeight: 700,
-                          cursor: "pointer",
                         }}
                       >
                         events
@@ -642,13 +642,13 @@ const BlogPage = () => {
                         position: "absolute",
                         top: "92%",
                         right: 70,
+                        cursor: "pointer",
                       }}
                     >
                       <Text
                         style={{
                           color: "#26890C",
                           fontWeight: 700,
-                          cursor: "pointer",
                         }}
                       >
                         events
@@ -733,13 +733,13 @@ const BlogPage = () => {
                         position: "absolute",
                         top: "92%",
                         right: 70,
+                        cursor: "pointer",
                       }}
                     >
                       <Text
                         style={{
                           color: "#E21B3C",
                           fontWeight: 700,
-                          cursor: "pointer",
                         }}
                       >
                         events

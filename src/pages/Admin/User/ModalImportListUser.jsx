@@ -151,7 +151,7 @@ const ModalImportFile = (props) => {
           dataSource={dataExcel}
           pagination={{ pageSize: "5" }}
           scroll={{
-            y: 200,
+            y: 500,
           }}
         />
       </Modal>

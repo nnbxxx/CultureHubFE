@@ -9,6 +9,7 @@ import {
   Col,
   Row,
   Divider,
+  message,
 } from "antd";
 const { Header, Content, Footer } = Layout;
 import { BsCartPlus } from "react-icons/bs";
@@ -155,7 +156,14 @@ const BookPage = (props) => {
                       >
                         Add to cart
                       </Button>
-                      <Button size='large'>Get Voucher</Button>
+                      <Button
+                        size='large'
+                        onClick={() => {
+                          message.info("Coming Soon ...");
+                        }}
+                      >
+                        Get Voucher
+                      </Button>
                     </div>
                   </div>
                 </div>

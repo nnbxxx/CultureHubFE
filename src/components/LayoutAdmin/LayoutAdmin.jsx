@@ -24,12 +24,13 @@ import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { FaBook } from "react-icons/fa";
 import { RiAdminLine } from "react-icons/ri";
 import { GiBookshelf } from "react-icons/gi";
-import { TbReportMoney } from "react-icons/tb";
+import { TbReportMoney, TbBook } from "react-icons/tb";
 import { callLogoutAccount } from "../../service/api";
 import { doLogoutAction } from "../../redux/account/accountSlice";
 import { AiOutlineHome } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import { MdOutlineManageAccounts } from "react-icons/md";
+
 import { useEffect } from "react";
 import FooterUser from "../Footer/FooterUser";
 
@@ -47,11 +48,12 @@ const itemsSideBar = [
   getItem("Users", "sub1", <UserOutlined />, [
     getItem("CRUD", "2", <AiOutlineUsergroupAdd />),
   ]),
-  getItem("Manage Books", "sub2", <GiBookshelf />, [
+  getItem("Manage Products", "sub2", <GiBookshelf />, [
     getItem("CRUD", "3", <FaBook />),
     // getItem("Team 2", "8"),
   ]),
   getItem("Manage Orders", "4", <TbReportMoney />),
+  getItem("Manage Blog", "5", <TbBook />),
 ];
 const LayoutAdmin = () => {
   const navigate = useNavigate();
@@ -84,6 +86,10 @@ const LayoutAdmin = () => {
     if (e.key === "4") {
       navigate("/admin/order");
       setActiveMenu("4");
+    }
+    if (e.key === "5") {
+      navigate("/admin/blog");
+      setActiveMenu("5");
     }
   };
 
@@ -127,6 +133,7 @@ const LayoutAdmin = () => {
     if (window.location.pathname.includes("/admin/user")) setActiveMenu("sub1");
     if (window.location.pathname.includes("/admin/book")) setActiveMenu("sub2");
     if (window.location.pathname.includes("/admin/order")) setActiveMenu("4");
+    if (window.location.pathname.includes("/admin/blog")) setActiveMenu("5");
   }, []);
   return (
     <>

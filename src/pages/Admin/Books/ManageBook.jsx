@@ -275,7 +275,7 @@ export const ManageBook = () => {
       <Table
         style={{ width: "100%" }}
         scroll={{
-          y: 300,
+          y: 500,
         }}
         columns={columnsTable}
         rowKey='_id'
