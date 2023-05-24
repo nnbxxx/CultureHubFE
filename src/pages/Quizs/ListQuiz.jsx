@@ -16,7 +16,7 @@ import HeaderUser from "../../components/Header/HeaderUser";
 import { Content } from "antd/es/layout/layout";
 import FooterUser from "../../components/Footer/FooterUser";
 import QuizItem from "./QuizItem";
-import { v4 as uuidv4 } from "uuid";
+
 const { Meta } = Card;
 const itemsTab = [
   {
@@ -39,9 +39,7 @@ const ListQuiz = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-  const handleDirectDetailQuiz = () => {
-    navigate(`/book/id=${uuidv4()}`);
-  };
+
   return (
     <Layout className='layout'>
       <HeaderUser />

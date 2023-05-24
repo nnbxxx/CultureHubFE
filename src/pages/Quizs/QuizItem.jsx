@@ -3,6 +3,7 @@ import { Card, Avatar, Badge, message, Tooltip, Typography } from "antd";
 import {
   CaretRightOutlined,
   EllipsisOutlined,
+  HeartFilled,
   StarFilled,
 } from "@ant-design/icons";
 import { useSelector } from "react-redux";
@@ -42,7 +43,7 @@ const QuizItem = () => {
               />{" "}
             </Tooltip>,
             <Tooltip title='Favorite'>
-              <StarFilled
+              <HeartFilled
                 className={favorite ? "like" : ""}
                 onClick={() => {
                   setFavorite(!favorite);
