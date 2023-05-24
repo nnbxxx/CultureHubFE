@@ -13,6 +13,7 @@ import {
   Typography,
   Modal,
   Button,
+  Result,
 } from "antd";
 const { Meta } = Card;
 const { Text, Link, Title, Paragraph } = Typography;
@@ -30,6 +31,7 @@ import { useNavigate } from "react-router-dom";
 import QuizContent from "./QuizContent";
 import { v4 as uuidv4 } from "uuid";
 import _ from "lodash";
+
 const dataQuizTmp = [
   {
     id: uuidv4(),
@@ -145,6 +147,7 @@ const Quiz = () => {
   const [noRepeat, setNoRepeat] = useState(false);
   const [question, setQuestion] = useState(1);
   const [dataQuiz, setDataQuiz] = useState(dataQuizTmp);
+  const [isModalOpenResult, setIsModalOpenResult] = useState(false);
   useEffect(() => {
     if (timeStart > 0)
       setTimeout(() => {
@@ -405,6 +408,7 @@ const Quiz = () => {
               type='primary'
               onClick={() => {
                 setIsModalOpen(false);
+                setIsModalOpenResult(true);
               }}
             >
               Submit
@@ -418,6 +422,31 @@ const Quiz = () => {
           question={question}
           data={dataQuiz[question - 1]}
           handleCheckBox={handleCheckBox}
+        />
+      </Modal>
+      <Modal
+        title='Result'
+        open={isModalOpenResult}
+        onCancel={() => {
+          setIsModalOpenResult(false);
+          navigate("/quiz");
+        }}
+        footer={null}
+      >
+        <Result
+          status='success'
+          title='Successfully Quiz!'
+          subTitle={<>You get 100/100</>}
+          extra={[
+            <Button
+              type='primary'
+              onClick={() => {
+                navigate("/quiz");
+              }}
+            >
+              Go Home
+            </Button>,
+          ]}
         />
       </Modal>
     </Layout>
