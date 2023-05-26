@@ -112,6 +112,7 @@ const BlogsPage = () => {
               onClick={() => {
                 setCount([...count, 1, 1, 1]);
               }}
+              disabled={count.length > 3 ? true : false}
             >
               Load More Blogs
             </Button>

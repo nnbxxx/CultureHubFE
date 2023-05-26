@@ -58,7 +58,7 @@ const BlogPage = () => {
             <Meta
               avatar={
                 <Avatar
-                  src={"https://kahoot.com/files/2021/12/dimitri_yellow.png"}
+                  src={"https://xsgames.co/randomusers/avatar.php?g=pixel"}
                   size={70}
                   style={{ border: "5px solid #fff" }}
                 />

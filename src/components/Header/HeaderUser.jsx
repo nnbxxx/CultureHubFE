@@ -27,6 +27,7 @@ import { doLogoutAction } from "../../redux/account/accountSlice";
 import { ModalManageAccount } from "./ModalManageAccount";
 import FloatButtonMenu from "../FloatButton/FloatButton";
 import { convertSlug } from "../ConvertSlug";
+import IconHomePage from "./IconHomePage/IconHomePage";
 const baseURL = import.meta.env.VITE_BACK_END_URL;
 const HeaderUser = (props) => {
   const navigate = useNavigate();
@@ -160,15 +161,7 @@ const HeaderUser = (props) => {
     <>
       <FloatButtonMenu />
       <Header>
-        <div
-          className='logo'
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          <FaReact />
-          <span style={{ fontSize: 15 }}> CultureHub</span>
-        </div>
+        <IconHomePage />
 
         <div className='navbar-search'>
           <Input.Search

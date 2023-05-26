@@ -237,7 +237,7 @@ export const ManageBook = () => {
   const handleDeleteBook = async (_id) => {
     let res = await callDeleteBook(_id);
     if (res && res.data) {
-      message.success("Sucessfully Delete Book");
+      message.success("Successfully Delete Product");
       fetchListBook();
     } else {
       notification.error({

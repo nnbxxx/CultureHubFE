@@ -31,7 +31,7 @@ const BlogItem = (props) => {
           style={{ marginBottom: 20 }}
           title={
             <div style={{ color: "white" }} className='hover-underline'>
-              Dimitri Kanaris
+              Admin
             </div>
           }
           description={
@@ -39,7 +39,7 @@ const BlogItem = (props) => {
           }
           avatar={
             <Avatar
-              src={"https://kahoot.com/files/2021/12/dimitri_yellow.png"}
+              src={"https://xsgames.co/randomusers/avatar.php?g=pixel"}
               size={50}
               style={{ border: "5px solid #fff" }}
             />
