@@ -35,102 +35,74 @@ import _ from "lodash";
 const dataQuizTmp = [
   {
     id: uuidv4(),
-    question: "100",
+    question:
+      "Giặc xâm lược được nhắc đến trong truyền thuyết Sự tích Hồ Gươm là:",
     answer: [
-      { id: uuidv4(), content: "1001", selected: false },
-      { id: uuidv4(), content: "1002", selected: false },
-      { id: uuidv4(), content: "1003", selected: false },
-      { id: uuidv4(), content: "1004", selected: false },
+      { id: uuidv4(), content: "Giặc  Ân", selected: false },
+      { id: uuidv4(), content: "Giặc Tống", selected: false },
+      { id: uuidv4(), content: "Giặc Thanh", selected: false },
+      { id: uuidv4(), content: "Giặc Minh", selected: false, correct: true },
     ],
   },
   {
     id: uuidv4(),
-    question: "101",
+    question:
+      "Trong truyền thuyết Sự tích Hồ Gươm có đề cập đến cuộc khởi nghĩa nào trong lịch sử dân tộc?",
     answer: [
-      { id: uuidv4(), content: "1005", selected: false },
-      { id: uuidv4(), content: "1006", selected: false },
-      { id: uuidv4(), content: "1007", selected: false },
-      { id: uuidv4(), content: "1008", selected: false },
+      { id: uuidv4(), content: "Khởi nghĩa Hai Bà Trưng", selected: false },
+      { id: uuidv4(), content: "Khởi nghĩa Lí Bí", selected: false },
+      {
+        id: uuidv4(),
+        content: "Khởi nghĩa Lam Sơn do Lê Lợi lãnh đạo",
+        selected: false,
+        correct: true,
+      },
+      {
+        id: uuidv4(),
+        content: " Khởi nghĩa Tây Sơn do ba anh em Nguyễn Nhạc lãnh đạo",
+        selected: false,
+      },
     ],
   },
   {
     id: uuidv4(),
-    question: "102",
+    question: " Hồ Hoàn Kiếm rộng bao nhiêu ?",
     answer: [
-      { id: uuidv4(), content: "1009", selected: false },
-      { id: uuidv4(), content: "1010", selected: false },
-      { id: uuidv4(), content: "1011", selected: false },
-      { id: uuidv4(), content: "1012", selected: false },
+      { id: uuidv4(), content: "1.5 ha", selected: false },
+      { id: uuidv4(), content: "3 ha", selected: false },
+      { id: uuidv4(), content: "12 ha", selected: false, correct: true },
+      { id: uuidv4(), content: "15 ha", selected: false },
     ],
   },
   {
     id: uuidv4(),
-    question: "103",
+    question:
+      "Trong truyền thuyết Sự tích Hồ Gươm, đức Long Quân quyết định cho nghĩa quân mượn vật gì?",
     answer: [
-      { id: uuidv4(), content: "1013", selected: false },
-      { id: uuidv4(), content: "1014", selected: false },
-      { id: uuidv4(), content: "1015", selected: false },
-      { id: uuidv4(), content: "1016", selected: false },
+      {
+        id: uuidv4(),
+        content: "Thanh gươm thần",
+        selected: false,
+        correct: true,
+      },
+      { id: uuidv4(), content: "Chiếc nỏ thần", selected: false },
+      {
+        id: uuidv4(),
+        content: "Bản đồ chỉ dẫn vào doanh trại quân giặc",
+        selected: false,
+      },
+      { id: uuidv4(), content: "Lá cờ thêu sáu chữ vàng", selected: false },
     ],
   },
   {
     id: uuidv4(),
-    question: "104",
+    question:
+      " Điền vào ô trống : cái tên “Hoàn Kiếm” xuất phát từ một truyền thuyết vua ………………………… trả kiếm cho rùa thần mà hầu như bất cứ người Việt Nam nào cũng đều biết đến.",
     answer: [
-      { id: uuidv4(), content: "1017", selected: false },
-      { id: uuidv4(), content: "1018", selected: false },
-      { id: uuidv4(), content: "1019", selected: false },
-      { id: uuidv4(), content: "1020", selected: false },
-    ],
-  },
-  {
-    id: uuidv4(),
-    question: "105",
-    answer: [
-      { id: uuidv4(), content: "1021", selected: false },
-      { id: uuidv4(), content: "1022", selected: false },
-      { id: uuidv4(), content: "1023", selected: false },
-      { id: uuidv4(), content: "1024", selected: false },
-    ],
-  },
-  {
-    id: uuidv4(),
-    question: "106",
-    answer: [
-      { id: uuidv4(), content: "1025", selected: false },
-      { id: uuidv4(), content: "1026", selected: false },
-      { id: uuidv4(), content: "1027", selected: false },
-      { id: uuidv4(), content: "1028", selected: false },
-    ],
-  },
-  {
-    id: uuidv4(),
-    question: "107",
-    answer: [
-      { id: uuidv4(), content: "1029", selected: false },
-      { id: uuidv4(), content: "1030", selected: false },
-      { id: uuidv4(), content: "1031", selected: false },
-      { id: uuidv4(), content: "1032", selected: false },
-    ],
-  },
-  {
-    id: uuidv4(),
-    question: "108",
-    answer: [
-      { id: uuidv4(), content: "1033", selected: false },
-      { id: uuidv4(), content: "1034", selected: false },
-      { id: uuidv4(), content: "1035", selected: false },
-      { id: uuidv4(), content: "1036", selected: false },
-    ],
-  },
-  {
-    id: uuidv4(),
-    question: "109",
-    answer: [
-      { id: uuidv4(), content: "1037", selected: false },
-      { id: uuidv4(), content: "1038", selected: false },
-      { id: uuidv4(), content: "1039", selected: false },
-      { id: uuidv4(), content: "1040", selected: false },
+      { id: uuidv4(), content: " Lê Thái Tổ", selected: false, correct: true },
+      { id: uuidv4(), content: "Lê Thánh Tông", selected: false },
+      { id: uuidv4(), content: "Lê Nhân Tông", selected: false },
+      { id: uuidv4(), content: "Lê Uy Mục", selected: false },
     ],
   },
 ];
@@ -148,6 +120,7 @@ const Quiz = () => {
   const [question, setQuestion] = useState(1);
   const [dataQuiz, setDataQuiz] = useState(dataQuizTmp);
   const [isModalOpenResult, setIsModalOpenResult] = useState(false);
+  const [result, setResult] = useState(0);
   useEffect(() => {
     if (timeStart > 0)
       setTimeout(() => {
@@ -179,6 +152,17 @@ const Quiz = () => {
     dataQuizClone[question - 1] = findQuestion;
     setDataQuiz(dataQuizClone);
   };
+  const handleSubmitQuiz = () => {
+    let tmp = 0;
+    dataQuiz.forEach((item, index) => {
+      item.answer.forEach((item, index) => {
+        if (item.selected && item.correct) {
+          tmp++;
+        }
+      });
+    });
+    setResult(tmp);
+  };
   return (
     <Layout className='layout'>
       <HeaderUser />
@@ -196,10 +180,7 @@ const Quiz = () => {
                   style={{ cursor: "default", position: "relative" }}
                   cover={
                     <>
-                      <img
-                        alt='example'
-                        src='https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png'
-                      />
+                      <img alt='example' src='../../../public/Quiz/2.avif' />
                     </>
                   }
                   actions={[
@@ -250,10 +231,10 @@ const Quiz = () => {
                         display: "block",
                       }}
                     >
-                      Python Programming Warm-Up
+                      Hồ Hoàn Kiếm
                     </div>
                     <Text style={{ color: "#737373", fontSize: 12 }}>
-                      15.6k plays • 22.5k players
+                      15 plays • 6 players
                     </Text>
                     <Paragraph
                       ellipsis={
@@ -266,12 +247,10 @@ const Quiz = () => {
                           : false
                       }
                     >
-                      Teachers! Are you starting to teach Python programming?
-                      Need to inspire your class with a quick
-                      no-knowledge-required warmup? Play this Kahoot and then
-                      visit https://gotyn.kr/kahoottext for fun Python Hour of
-                      Code puzzles and projects with teacher guides and answer
-                      keys!
+                      Hồ Hoàn Kiếm được mệnh danh là “trái tim” của thủ đô Hà
+                      Nội. Không chỉ là điểm đến yêu thích của du khách thập
+                      phương mà nơi này còn mang giá trị lịch sử văn hóa quý báu
+                      của dân tộc.
                     </Paragraph>
                   </div>
 
@@ -307,14 +286,14 @@ const Quiz = () => {
                     style={{
                       position: "absolute",
                       top: 195,
-                      left: "40%",
+                      left: "39%",
                       color: "white",
                       backgroundColor: "rgba(51, 51, 51, 0.8)",
                       padding: "1.5px 8px",
                       borderRadius: 4,
                     }}
                   >
-                    {11} questions
+                    {5} questions
                   </div>
                 </Card>
               </Badge.Ribbon>
@@ -364,7 +343,7 @@ const Quiz = () => {
               justifyContent: "space-between",
             }}
           >
-            <Title level={3}>Python Programming Warm-Up</Title>
+            <Title level={3}>Hồ Hoàn Kiếm</Title>
             <Title
               level={5}
               style={{
@@ -409,6 +388,7 @@ const Quiz = () => {
               onClick={() => {
                 setIsModalOpen(false);
                 setIsModalOpenResult(true);
+                handleSubmitQuiz();
               }}
             >
               Submit
@@ -439,9 +419,9 @@ const Quiz = () => {
           title='Successfully Quiz!'
           subTitle={
             <>
-              <div>Total Question: 11</div>
-              <div>Correct Question: 11</div>
-              <div>Score : 11</div>
+              <div>Total Question: {dataQuiz.length}</div>
+              <div>Correct Question: {result}</div>
+              <div>Score : {result}</div>
             </>
           }
           extra={[

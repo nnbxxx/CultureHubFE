@@ -16,7 +16,7 @@ import HeaderUser from "../../components/Header/HeaderUser";
 import { Content } from "antd/es/layout/layout";
 import FooterUser from "../../components/Footer/FooterUser";
 import QuizItem from "./QuizItem";
-
+import { v4 as uuidv4 } from "uuid";
 const { Meta } = Card;
 const itemsTab = [
   {
@@ -35,11 +35,73 @@ const itemsTab = [
     children: <></>,
   },
 ];
+const data = [
+  {
+    title: " Cố Đô Huế ",
+    urlImg: "../../../public/Quiz/1.avif",
+    author: "Admin",
+    description: {
+      play: "7",
+      player: "3",
+      numberQuestion: 5,
+    },
+  },
+  {
+    title: "Hồ Hoàn Kiếm Hà Nội",
+    urlImg: "../../../public/Quiz/2.avif",
+    author: "Admin",
+    description: {
+      play: "9",
+      player: "5",
+      numberQuestion: 5,
+    },
+  },
+  {
+    title: "Lăng chủ tịch Hồ Chí Minh",
+    urlImg: "../../../public/Quiz/3.avif",
+    author: "Admin",
+    description: {
+      play: "13",
+      player: "5",
+      numberQuestion: 5,
+    },
+  },
+  {
+    title: "Phố cổ Hội An",
+    urlImg: "../../../public/Quiz/4.jpg",
+    author: "Admin",
+    description: {
+      play: "5",
+      player: "5",
+      numberQuestion: 5,
+    },
+  },
+  {
+    title: "Đền Ngọc Sơn",
+    urlImg: "../../../public/Quiz/5.jpg",
+    author: "Admin",
+    description: {
+      play: "5",
+      player: "5",
+      numberQuestion: 5,
+    },
+  },
+  {
+    title: "Tháp Chàm",
+    urlImg: "../../../public/Quiz/6.jpg",
+    author: "Admin",
+    description: {
+      play: "5",
+      player: "5",
+      numberQuestion: 5,
+    },
+  },
+];
 const ListQuiz = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-
+  const [dataQuiz, setDataQuiz] = useState(data);
   return (
     <Layout className='layout'>
       <HeaderUser />
@@ -66,12 +128,11 @@ const ListQuiz = () => {
               gridTemplateColumns: " repeat(4, minmax(0, 1fr))",
             }}
           >
-            <QuizItem />
-            <QuizItem />
-            <QuizItem />
-            <QuizItem />
-            <QuizItem />
-            <QuizItem />
+            {dataQuiz &&
+              dataQuiz.length > 0 &&
+              dataQuiz.map((item, index) => {
+                return <QuizItem key={uuidv4()} data={item} />;
+              })}
           </div>
           <div
             style={{
@@ -87,6 +148,7 @@ const ListQuiz = () => {
               onClick={() => {
                 navigate("/quiz");
               }}
+              disabled
             >
               Show More
             </Button>

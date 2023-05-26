@@ -43,8 +43,8 @@ const Blog = (props) => {
   const { data } = props;
   return (
     <Row>
-      <Col span={2}>
-        <Image width={65} src={data.urlImg} preview={false} />
+      <Col span={3}>
+        <Image width={105} height={65} src={data.urlImg} preview={false} />
       </Col>
       <Col span={18}>
         <Text

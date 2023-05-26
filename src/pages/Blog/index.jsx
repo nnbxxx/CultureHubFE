@@ -47,13 +47,12 @@ const BlogPage = () => {
             }}
           >
             <h1 style={{ fontSize: 44, textAlign: "left" }}>
-              Gamified learning experiences were the main character at this
-              year’s Kahoot! EDU Meetup!
+              Hồ Gươm Hà Nội – Vẻ đẹp cổ kính giữa lòng thủ đô
             </h1>
             <span style={{ fontWeight: 400, fontSize: 22, textAlign: "left" }}>
-              Yesterday, we learned why teachers around the world are gaming and
-              learning with their students to boost engagement and learning
-              retention!
+              Hồ Hoàn Kiếm (Hồ Gươm) nằm ngay trung tâm quận Hoàn Kiếm nên rất
+              thuận tiện cho du khách tìm đến ngắm cảnh và khám phá nhiều trải
+              nghiệm thú vị vào bất cứ thời điểm nào trong ngày.
             </span>
             <Meta
               avatar={
@@ -143,324 +142,350 @@ const BlogPage = () => {
               </Col>
               <Col span={20}>
                 <Title level={3} style={{ marginTop: -10, fontWeight: 700 }}>
-                  How higher ed faculty are boosting student engagement!
+                  Hồ Hoàn Kiếm
                 </Title>
                 <Paragraph
                   style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
                 >
-                  As Kahoot! was born in higher ed, our first EDU Meetup last
-                  week was a long-awaited and highly anticipated return to our
-                  roots! We saw presentations from higher ed faculty and admins
-                  sharing their recommended best practices for using Kahoot! in
-                  your courses. They detail their first-hand experience
-                  reviewing course content, assessing knowledge, and fostering
-                  discussion with Kahoot!. So, with exam season right around the
-                  corner, there’s no better time to get up to date on our latest
-                  features and updates to try out with your students!
+                  Hồ Hoàn Kiếm hay còn gọi là Hồ Gươm tọa lạc ngay trung tâm thủ
+                  đô Hà Nội và được bao quanh bởi 3 con phố Hàng Khay – Lê Thái
+                  Tổ – Đinh Tiên Hoàng.
                 </Paragraph>
                 <Paragraph
                   style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
                 >
-                  In case you missed it or want to revisit any of your favorite
-                  sessions and &nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                  >
-                    rewatch on-demand
-                  </Text>
-                  !
+                  Do nằm ở vị trí đắc địa, là nơi kết nối giữa khu phố cổ như
+                  Hàng Ngang, Hàng Đào, Cầu Gỗ, Lương Văn Can... với khu phố Tây
+                  là Nhà Thờ, Tràng Thi, Hàng Bài, Tràng Tiền, Hàng Khay... nên
+                  Hồ Hoàn Kiếm thu hút nhiều du khách trong và ngoài nước đến
+                  tham quan, khám phá trong chuyến du lịch Hà Nội.
                 </Paragraph>
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  Don’t forget to take advantage of our special EDU Meetup offer
-                  to &nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                  >
-                    get up to 20% off on Kahoot!+ plans
-                  </Text>
-                  &nbsp;from $12.99/month, or if you’re already on a Kahoot! EDU
-                  Standard plan, email&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                  >
-                    schoolpack@kahoot.com
-                  </Text>
-                  &nbsp;for a free upgrade to Kahoot! EDU Pro.
-                </Paragraph>
-                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
-                  What’s new at Kahoot! for Higher ed
-                </Title>
                 <Image
                   width={1028}
                   height={580}
-                  src='https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
+                  src='../../../public/Blog/BlogMain/1.jpg'
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  For our 10th anniversary of making learning awesome, Sean
-                  D’Arcy, VP of Kahoot! at School, highlighted how far we’ve
-                  come since our humble beginnings as a university project.
-                  Attendees got a look at higher ed faculty favorites, including
-                  word cloud, open-ended, and brainstorm question types, as well
-                  as our newest question types, drop pin, slider, and 6 answer
-                  options for quizzes and polls! And that was only the
-                  beginning! We’re excited to introduce so many new ways of
-                  creating interactive learning experiences with Student Passes,
-                  giving students access to the Kahoot! Creator, and engaging
-                  study modes, encouraging student knowledge sharing in and out
-                  of the classroom. Plus student-led game modes, and Kahoot!
-                  courses that allow instructors to add multiple kahoots,
-                  videos, PDFs, and other resources into full courses that can
-                  be hosted live, assigned to students, or studied at their own
-                  pace.
-                </Paragraph>
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  Our most recent project, Kahoot! for Brands was also
-                  announced, making it possible for faculty and admins to add
-                  their higher ed institutions’ unique branding into all kahoots
-                  hosted on campus! We’re so thankful for the constant support
-                  from the higher ed community over the past 10 years with over
-                  97% of the global top 500 universities using Kahoot!, and over
-                  82% of those with upgraded Kahoot! EDU or Kahoot!+ accounts.
-                  That’s a lot of awesome learning happening around the world!
-                </Paragraph>
-                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
-                  Kick up the engagement with kahoots
-                </Title>
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  As a Professor of Education at McKendree University, Dr. Julie
-                  Tronsing-Meyer’s students are future teachers learning about
-                  how to effectively teach lesson content. Dr. Tronsing-Meyer
-                  discusses her research-based teaching practices and how ISTE
-                  standards and the constructivist teaching theory support the
-                  use of Kahoot! for effective learning. In practice with her
-                  undergraduate students, she found that using Kahoot! was a
-                  great way to support active learning because her students
-                  learn through experience, social discourse, and collaboration.
-                  Finally, Julie gives us her tips and tricks for using Kahoot!
-                  in her courses and shares feedback from her students, who
-                  said, “Kahoot! makes me feel confident to participate in the
-                  activity”.
-                </Paragraph>
-                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
-                  From student to teacher – using Kahoot! in all academic arenas
-                </Title>
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  Kurt Naicker is a Senior Lecturer at the School of Accounting
-                  at North West University and the Campus Innovation Lead within
-                  the Faculty of Economics and Management Sciences. Kurt talked
-                  us through his experiences using Kahoot! not only as an
-                  instructor but also as a student himself! He discusses how
-                  Kahoot! aided in his professional growth and how he brought
-                  his learnings with him as a faculty leader, helping to
-                  implement technology and exploring how to keep curriculum
-                  relevant in the future of AI, machine learning, and the fourth
-                  industrial revolution. Kurt shared from his own experience and
-                  the opinion of his students, that there was an observable
-                  improvement in their achievement and performance as Kahoot!
-                  increased knowledge retention, collaboration, and helped them
-                  take a more structured approach to assessment.
-                </Paragraph>
-                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
-                  Make the most of Kahoot! tools for interactive learning and
-                  assessment
-                </Title>
-                <Image
-                  width={1028}
-                  height={580}
-                  src='https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
-                  preview={false}
-                  style={{ padding: "10px 0" }}
-                />
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  This is a session you won’t want to miss! Joshua Scoggin,
-                  Account Executive at Kahoot!, shows you how to take any
-                  Kahoot! from good to great, optimize the Kahoot! experience
-                  for assessment, and gives an in-depth demonstration of Kahoot!
-                  Creator, question types, and options. Whether you’re new to
-                  Kahoot! or a seasoned Kahoot!er, there is something here for
-                  everyone from the foundations of how to choose the right
-                  question types for your content to how you can create a plan
-                  and organize your information so your students can get the
-                  most out of the Kahoot! experience!
-                </Paragraph>
-                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
-                  Uncommon Kahoot!s – Have you ever…?
-                </Title>
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  Dr. Jennifer Robinette, Senior Professional Lecturer of
-                  Communication and Public Relations at Marist College,
-                  challenges the audience to teach entire, hour-long lectures
-                  with Kahoot! as an end-to-end interactive presentation tool.
-                  With recommended structures for how Kahoot! can complement the
-                  flipped classroom approach, Dr. Robinette discusses the value
-                  of incorporating Kahoot! questions throughout classroom
-                  content, encouraging students to constantly apply themselves
-                  by including PowerPoint slides and videos interwoven with
-                  polls, word clouds, and puzzles that optimize lessons for
-                  student attention spans. To really lock in the learning,
-                  Jennifer creates lightning rounds to repeat any difficult
-                  questions that came up in the lesson with less time to answer
-                  and worth more points! Now that’s a recipe for engaging
-                  learning that her students loved so much, they even shared the
-                  experience on social media!
-                </Paragraph>
-                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
-                  Thank you for making this event awesome!
-                </Title>
-                <Paragraph
-                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
-                >
-                  Thank you to everyone who participated in our first&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                  >
-                    Kahoot! EDU Meetup for higher ed
-                  </Text>
-                  , and to our speakers who made this event truly awesome with
-                  all their insights and advice for improving the learning
-                  experience for every student! Don’t forget to&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                  >
-                    re-watch your favorite sessions
-                  </Text>
-                  &nbsp;and take advantage of our EDU Meetup offer to get access
-                  to all these great features and&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                  >
-                    save up to 20% on a Kahoot!+ plan
-                  </Text>
-                  &nbsp;from $12.99/month!
-                </Paragraph>
-                <Paragraph
+                <Text
                   style={{
-                    fontSize: 18,
-                    textAlign: "left",
+                    fontSize: 12,
                     color: "#333333",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    display: "block",
                   }}
+                  italic
                 >
-                  If you have any content from the event or your own classrooms
-                  that you would like to share, please reach out or tag us
-                  on&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                    strong
-                  >
-                    Twitter
-                  </Text>
-                  ,&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                    strong
-                  >
-                    Facebook
-                  </Text>
-                  ,&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                    strong
-                  >
-                    Instagram
-                  </Text>
-                  ,&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                    strong
-                  >
-                    LinkedIn
-                  </Text>
-                  , and&nbsp;
-                  <Text
-                    style={{
-                      fontSize: 18,
-                      cursor: "pointer",
-                      fontWeight: 400,
-                    }}
-                    className='text-hover'
-                    underline
-                    strong
-                  >
-                    TikTok
-                  </Text>
-                  ! We hope you have a great rest of the term and we’ll see you
-                  again soon for the EDU Summit in June!
+                  Hồ Hoàn Kiếm nằm ngay trung tâm thủ đô nên rất thuận tiện cho
+                  du khách tham quan, khám phá.
+                </Text>
+
+                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
+                  Lịch sử hồ Hoàn Kiếm
+                </Title>
+
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Hồ đã có từ rất lâu, khoảng vài nghìn năm trước, song trước
+                  khi mang tên chính thức là Hoàn Kiếm, hồ có rất nhiều tên gọi
+                  gắn liền với những câu chuyện khác nhau chẳng hạn như tên hồ
+                  Lục Thủy vì nước hồ có màu xanh biếc quanh năm, hồ Thủy Quân
+                  vì đây là nơi triều đình dùng để duyệt thủy binh…
+                </Paragraph>
+                <Image
+                  width={1028}
+                  height={580}
+                  src='../../../public/Blog/BlogMain/1.jpg'
+                  preview={false}
+                  style={{ padding: "10px 0" }}
+                />
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: "#333333",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    display: "block",
+                  }}
+                  italic
+                >
+                  Hồ Gươm luôn đi cùng lịch sử phát triển của dân tộc Việt Nam
+                  từ xưa đến nay.
+                </Text>
+
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Tên gọi Hoàn Kiếm chính thức xuất hiện vào đầu thế kỷ 15 gắn
+                  với truyền thuyết vua Lê Thái Tổ trả gươm báu cho Rùa thần sau
+                  khi mượn gươm chiến đấu, đánh tan giặc Minh, chính thức lên
+                  làm vua và gây dựng triều đại nhà Lê thịnh vượng.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Truyền thuyết kể lại rằng, khi Lê Lợi đứng lên lãnh đạo cuộc
+                  khởi nghĩa Lam Sơn ở Thanh Hóa chống lại quân Minh, ông tình
+                  cờ bắt được thanh gươm Thuận Thiên. Nhờ có thanh gươm báu này
+                  mà ông thắng trận liên tiếp, lên ngôi vua đầu năm 1428.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Trong một lần cùng quần thần dạo thuyền trên hồ Lục Thủy, chợt
+                  rùa vàng nổi lên. Khi vua tuốt gươm chỉ vào, rùa liền ngậm
+                  gươm lặn xuống đáy hồ và không nổi lên nữa. Nghĩ rằng đó là ý
+                  trời cho mượn gươm đánh giặc mà nay thiên hạ thái bình nên sai
+                  rùa đến đòi gươm. Từ đó, hồ được đổi tên thành hồ Hoàn Kiếm.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Tuy nhiên khoảng cuối thế kỉ 16, chúa Trịnh cho ngăn hồ thành
+                  hai phần tả - hữu, lấy tên là Vọng. Sau đó đến năm 1884, hồ
+                  Hữu Vọng bị thực dân Pháp lấp đầy để mở mang thủ đô, còn hồ Tả
+                  Vọng được giữ lại chính là hồ Hoàn Kiếm (hồ Gươm) ngày nay.
+                </Paragraph>
+                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
+                  Phương tiện di chuyển đến hồ Hoàn Kiếm
+                </Title>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Nếu du khách dừng chân nghỉ ngơi tại các nhà nghỉ, khách sạn
+                  quanh khu vực phố cổ thì chỉ cần vài bước đi bộ là có thể tha
+                  hồ khám phá những địa điểm du lịch đẹp Hà Nội như hồ Hoàn
+                  Kiếm, đền Ngọc Sơn, phố đi bộ hồ Gươm…
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Trường hợp, du khách ở xa trung tâm có thể di chuyển bằng các
+                  phương tiện công cộng khác như taxi hoặc xe bus. Những tuyến
+                  xe bus đi qua hồ Hoàn Kiếm mà du khách có thể tham khảo là số
+                  09, số 14 và số 16 với tần suất 15 – 20 phút/chuyến và thời
+                  gian hoạt động từ 5h05 đến 21h05.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Riêng với taxi ở Hà Nội, để tránh tình trạng bị chặt chém, du
+                  khách nên hỏi giá cước trước và đừng quên chọn những hãng taxi
+                  uy tín như Mai Linh, Thành Công…
+                </Paragraph>
+                <Image
+                  width={1028}
+                  height={580}
+                  src='../../../public/Blog/BlogMain/3.jpg'
+                  preview={false}
+                  style={{ padding: "10px 0" }}
+                />
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: "#333333",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    display: "block",
+                  }}
+                  italic
+                >
+                  Có rất nhiều phương tiện cho du khách lựa chọn di chuyển đến
+                  hồ Gươm.
+                </Text>
+                <Title level={4} style={{ marginTop: -10, fontWeight: 700 }}>
+                  Những điểm đến không thể bỏ qua ở hồ Hoàn Kiếm
+                </Title>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Đền Ngọc Sơn: Đền Ngọc Sơn là một trong những điểm đến không
+                  thể bỏ qua khi đến du lịch Hà Nội. Nằm trên một hòn đảo ở phía
+                  bắc của Hồ Hoàn Kiếm, đền Ngọc Sơn được nối với phần bờ bằng
+                  cây cầu Thê Húc sơn màu đỏ tươi nổi bật. Đến đền Ngọc Sơn, du
+                  khách không chỉ được chiêm ngưỡng công trình kiến trúc tuyệt
+                  tác in hằn dấu vết thời gian đầy hoài cổ, ngắm nhìn toàn cảnh
+                  Hồ Gươm đẹp lung linh mà còn có cơ hội tìm hiểu về văn hóa
+                  cũng như các câu chuyện ít người biết gắn liền với lịch sử của
+                  đền.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Tất cả kiến trúc, hệ thống câu đối, hoành phi, vật bài trí ở
+                  đền Ngọc Sơn đều là tổng thể dung hợp hài hòa ung hòa của Đạo
+                  giáo, Phật giáo và Nho giáo.
+                </Paragraph>
+                <Image
+                  width={1028}
+                  height={580}
+                  src='../../../public/Blog/BlogMain/4.jpg'
+                  preview={false}
+                  style={{ padding: "10px 0" }}
+                />
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: "#333333",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    display: "block",
+                  }}
+                  italic
+                >
+                  Đền Ngọc Sơn - Tuyệt tác kiến trúc giữa đất kinh kỳ.
+                </Text>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Cầu Thê Húc: Cùng với đền Ngọc Sơn, cầu Thê Húc là biểu tượng
+                  cho nét đẹp quyến rũ của hồ Hoàn Kiếm nói chung và thủ đô Hà
+                  Nội nói riêng. Với kiến trúc xây dựng độc đáo cùng nhiều giá
+                  trị văn hóa, lịch sử lâu đời, cầu Thê Húc đã trở thành điểm
+                  đến không thể bỏ qua của mỗi du khách khi đến du lịch Hà Nội.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Khi mới khởi công, cầu Thê Húc có thiết kế uốn cong hình con
+                  tôm, được làm bằng gỗ rất thô sơ và sơn màu đỏ - màu của sự
+                  sống, phồn vinh, thịnh vượng. Tương truyền cuối thế kỷ 19 cầu
+                  bị gãy và được xây mới với chân làm bằng xi măng cốt thép,
+                  sàn, lan can bằng gỗ và vẫn giữ lại màu đỏ đặc trưng.
+                </Paragraph>
+                <Image
+                  width={1028}
+                  height={580}
+                  src='../../../public/Blog/BlogMain/5.jpg'
+                  preview={false}
+                  style={{ padding: "10px 0" }}
+                />
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: "#333333",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    display: "block",
+                  }}
+                  italic
+                >
+                  Tên cầu Thê Húc có ý nghĩa là “nơi đậu ánh sáng Mặt Trời buổi
+                  sáng sớm”.
+                </Text>
+
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Vườn hoa, tượng đài Lý Thái Tổ: Tượng đài Vua Lý Thái Tổ được
+                  đặt tại vườn hoa Lý Thái Tổ, đường Đinh Tiên Hoàng, quận Hoàn
+                  Kiếm, trung tâm thủ đô Hà Nội. Công trình này được xây dựng
+                  nhằm tưởng nhớ, tôn vinh nhằm tôn vua Lý Thái Tổ - người đặt
+                  nền móng xây dựng kinh thành Thăng Long.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Không chỉ là công trình kiến trúc mang giá trị lịch sử, vườn
+                  hoa và tượng đài Lý Thái Tổ còn là điểm đến yêu thích của
+                  người dân địa phương cũng như khách du lịch vào mỗi buổi chiều
+                  muộn.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Sau khi tham quan các điểm đến trong di tích đền Ngọc Sơn, du
+                  khách có thể dạo bộ đến đây để ngắm nhìn cuộc sống bình yên
+                  của người dân thủ đô, để cảm nhận một Hà Nội rất khác so với
+                  hình ảnh đông đúc, xô bồ thường gặp.
+                </Paragraph>
+                <Image
+                  width={1028}
+                  height={580}
+                  src='../../../public/Blog/BlogMain/6.jpg'
+                  preview={false}
+                  style={{ padding: "10px 0" }}
+                />
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: "#333333",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    display: "block",
+                  }}
+                  italic
+                >
+                  Vườn hoa, tượng đài Lý Thái Tổ - Điểm đến yêu thích của người
+                  dân địa phương và du khách.
+                </Text>
+
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Nhà hát Múa Rối Nước Thăng Long: Đây là một trong những nhà
+                  hát múa rối truyền thống vẫn còn hoạt động cho đến ngày nay và
+                  luôn mang đến cho khán giả những màn trình diễn đầy màu sắc
+                  nghệ thuật truyền thống ấn tượng.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Những màn trình diễn rối nước đặc sắc không chỉ được du khách
+                  và người dân địa phương yêu thích mà còn trở nên nổi tiếng
+                  khắp năm châu và tham dự nhiều liên hoan nghệ thuật trên toàn
+                  thế giới.
+                </Paragraph>
+                <Image
+                  width={1028}
+                  height={580}
+                  src='../../../public/Blog/BlogMain/7.jpg'
+                  preview={false}
+                  style={{ padding: "10px 0" }}
+                />
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Phố đi bộ hồ Gươm: Mặc dù chỉ mới chính thức hoạt động hơn 1
+                  năm, song phố đi bộ quanh hồ Gươm đã trở thành điểm đến lý
+                  tưởng cho nhiều người dân thủ đô cũng như khách thập phương
+                  đến du lịch Hà Nội vào mỗi dịp cuối tuần.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Theo kinh nghiệm du lịch Hà Nội, phố đi bộ Hồ Gươm đông vui
+                  nhất là sau khoảng 7 giờ tối vào 2 ngày thứ 7 và chủ Nhật. Lúc
+                  thành phố vừa lên đèn, bỗng nhiên phố đi bộ đông đúc người qua
+                  lại với đủ trò chơi, hoạt động văn hóa nghệ thuật sôi động,
+                  hấp dẫn.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Tiêu biểu nhất phải kể đến những tiết mục âm nhạc đường phố
+                  với đủ thể loại như kèn saxophone, sáo, violon, chèo, cải
+                  lương, nhạc EDM, rock… Cảm giác được dạo những bước chân lững
+                  thững giữa không gian thoáng đãng không khói bụi, còi xe, thả
+                  hồn theo những bài hát, giai điệu yêu thích đúng là không còn
+                  gì tuyệt vời hơn.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Ngoài ra những trò chơi dân gian, hiện đại vô cùng thú vị như
+                  ô ăn quan, nhảy dây, đánh chuyền… không chỉ khiến các em nhỏ
+                  mà cả thanh niên, người lớn tuổi đều vô cùng thích thú.
+                </Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18, textAlign: "left", color: "#333333" }}
+                >
+                  Bên cạnh nhiều hoạt động vui chơi náo nhiệt, ở một góc nào đó
+                  của phố đi bộ vẫn có những không gian mang nhiều nét hoài niệm
+                  Hà Nội cổ với quầy bán tò he, đèn ông sao, gánh hàng rong đầy
+                  quà bánh xưa.
                 </Paragraph>
                 <Title style={{ color: "#333", fontSize: 44 }}>
                   Related articles
@@ -485,7 +510,7 @@ const BlogPage = () => {
                     cover={
                       <Image
                         alt='example'
-                        src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
+                        src='../../../public/Blog/2.png'
                         preview={false}
                         height={185}
                       />
@@ -498,7 +523,7 @@ const BlogPage = () => {
                           style={{ color: "white" }}
                           className='hover-underline'
                         >
-                          Dimitri Kanaris
+                          Admin
                         </div>
                       }
                       description={
@@ -509,7 +534,7 @@ const BlogPage = () => {
                       avatar={
                         <Avatar
                           src={
-                            "https://kahoot.com/files/2021/12/dimitri_yellow.png"
+                            "https://xsgames.co/randomusers/avatar.php?g=pixel"
                           }
                           size={50}
                           style={{ border: "5px solid #fff" }}
@@ -522,13 +547,17 @@ const BlogPage = () => {
                       className='hover-underline'
                       strong
                     >
-                      Gamified learning experiences were the main character at
-                      this year’s Kahoot! EDU Meetup!
+                      Lịch Sử Hồ Hoàn Kiếm
                     </Paragraph>
-                    <Paragraph style={{ color: "white", fontSize: 14 }}>
-                      Yesterday, we learned why teachers around the world are
-                      gaming and learning with their students to boost
-                      engagement and learning retention!
+                    <Paragraph
+                      style={{ color: "white", fontSize: 14 }}
+                      ellipsis={{ rows: 4 }}
+                    >
+                      Hồ Hoàn Kiếm không chỉ đơn thuần là địa điểm du lịch hút
+                      khách, mà nơi đây còn là di tích đã trải qua biết bao
+                      thăng trầm lịch sử của mảnh đất Hà Thành. Hồ Hoàn Kiếm là
+                      một trong những biểu tượng của thủ đô, chỉ cần nhắc đến là
+                      nghĩ ngay đến Hà Nội.
                     </Paragraph>
                     <Text
                       strong
@@ -576,7 +605,7 @@ const BlogPage = () => {
                     cover={
                       <Image
                         alt='example'
-                        src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
+                        src='../../../public/Blog/3.png'
                         preview={false}
                         height={185}
                       />
@@ -589,7 +618,7 @@ const BlogPage = () => {
                           style={{ color: "white" }}
                           className='hover-underline'
                         >
-                          Dimitri Kanaris
+                          Admin
                         </div>
                       }
                       description={
@@ -600,7 +629,7 @@ const BlogPage = () => {
                       avatar={
                         <Avatar
                           src={
-                            "https://kahoot.com/files/2021/12/dimitri_yellow.png"
+                            "https://xsgames.co/randomusers/avatar.php?g=pixel"
                           }
                           size={50}
                           style={{ border: "5px solid #fff" }}
@@ -613,13 +642,18 @@ const BlogPage = () => {
                       className='hover-underline'
                       strong
                     >
-                      Gamified learning experiences were the main character at
-                      this year’s Kahoot! EDU Meetup!
+                      Đôi Điều Về Rùa Hồ Hoàn Kiếm
                     </Paragraph>
-                    <Paragraph style={{ color: "white", fontSize: 14 }}>
-                      Yesterday, we learned why teachers around the world are
-                      gaming and learning with their students to boost
-                      engagement and learning retention!
+                    <Paragraph
+                      style={{ color: "white", fontSize: 14 }}
+                      ellipsis={{ rows: 4 }}
+                    >
+                      Rùa hồ Hoàn Kiếm có tên gọi khoa học là Rafetus Leloii hay
+                      Rafetus Vietnamensis thuộc họ ba ba, có kích thước khá
+                      lớn. Trước đây rùa hồ Hoàn Kiếm có 4 cá thể nhưng đến hiện
+                      tại tất cả đều đã chết. Cũng có thông tin cho rằng vẫn còn
+                      khoảng 5 cá thể trong hồ nhưng điều này chưa được chứng
+                      minh.
                     </Paragraph>
                     <Text
                       strong
@@ -667,7 +701,7 @@ const BlogPage = () => {
                     cover={
                       <Image
                         alt='example'
-                        src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
+                        src='../../../public/Blog/4.png'
                         preview={false}
                         height={185}
                       />
@@ -680,7 +714,7 @@ const BlogPage = () => {
                           style={{ color: "white" }}
                           className='hover-underline'
                         >
-                          Dimitri Kanaris
+                          Admin
                         </div>
                       }
                       description={
@@ -691,7 +725,7 @@ const BlogPage = () => {
                       avatar={
                         <Avatar
                           src={
-                            "https://kahoot.com/files/2021/12/dimitri_yellow.png"
+                            "https://xsgames.co/randomusers/avatar.php?g=pixel"
                           }
                           size={50}
                           style={{ border: "5px solid #fff" }}
@@ -704,13 +738,16 @@ const BlogPage = () => {
                       className='hover-underline'
                       strong
                     >
-                      Gamified learning experiences were the main character at
-                      this year’s Kahoot! EDU Meetup!
+                      Hồ Hoàn Kiếm Có Gì Chơi?
                     </Paragraph>
-                    <Paragraph style={{ color: "white", fontSize: 14 }}>
-                      Yesterday, we learned why teachers around the world are
-                      gaming and learning with their students to boost
-                      engagement and learning retention!
+                    <Paragraph
+                      style={{ color: "white", fontSize: 14 }}
+                      ellipsis={{ rows: 4 }}
+                    >
+                      Hồ Hoàn Kiếm Hà Nội có gì chơi? Đây luôn là địa điểm thu
+                      hút không chỉ du khách thập phương mà còn cả những cư dân
+                      địa phương. Thật là thiếu sót nếu bạn bỏ qua những địa
+                      danh nổi tiếng sau:
                     </Paragraph>
                     <Text
                       strong

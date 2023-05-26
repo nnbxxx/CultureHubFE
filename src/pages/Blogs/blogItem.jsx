@@ -6,25 +6,20 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 const BlogItem = (props) => {
-  const { color } = props;
+  const { data } = props;
   const navigate = useNavigate();
   return (
     <>
       <Card
         style={{
           height: 550,
-          backgroundColor: color,
-          borderColor: color,
+          backgroundColor: data.color,
+          borderColor: data.color,
           boxShadow: "0 2px 4px rgba(0,0,0,0.15)",
           position: "relative",
         }}
         cover={
-          <Image
-            alt='example'
-            src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
-            preview={false}
-            height={185}
-          />
+          <Image alt='example' src={data.urlImg} preview={false} height={185} />
         }
       >
         <Meta
@@ -35,7 +30,9 @@ const BlogItem = (props) => {
             </div>
           }
           description={
-            <div style={{ color: "white", marginTop: -10 }}>March 24, 2023</div>
+            <div style={{ color: "white", marginTop: -10 }}>
+              {data.createAt}
+            </div>
           }
           avatar={
             <Avatar
@@ -47,20 +44,20 @@ const BlogItem = (props) => {
         />
         <Paragraph
           style={{ fontSize: 18, color: "white" }}
-          ellipsis={{ rows: 2 }}
+          ellipsis={{ rows: 1 }}
           className='hover-underline'
           strong
           onClick={() => {
             navigate(`/blog/id=${uuidv4()}`);
           }}
         >
-          Gamified learning experiences were the main character at this year’s
-          Kahoot! EDU Meetup!
+          {data.title}
         </Paragraph>
-        <Paragraph style={{ color: "white", fontSize: 14 }}>
-          Yesterday, we learned why teachers around the world are gaming and
-          learning with their students to boost engagement and learning
-          retention!
+        <Paragraph
+          style={{ color: "white", fontSize: 14 }}
+          ellipsis={{ rows: 3 }}
+        >
+          {data.description}
         </Paragraph>
         <Text
           strong
@@ -91,7 +88,7 @@ const BlogItem = (props) => {
         >
           <Text
             style={{
-              color: color,
+              color: data.color,
               fontWeight: 700,
             }}
           >

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Avatar, Badge, message, Tooltip, Typography } from "antd";
+import { Card, Avatar, Badge, message, Tooltip, Typography, Image } from "antd";
 import {
   CaretRightOutlined,
   EllipsisOutlined,
@@ -12,10 +12,11 @@ import "./index.scss";
 const { Meta } = Card;
 const { Text, Link, Title, Paragraph } = Typography;
 import { v4 as uuidv4 } from "uuid";
-const QuizItem = () => {
+const QuizItem = (props) => {
   const isAuthenticated = useSelector((state) => state.account.isAuthenticated);
   const navigate = useNavigate();
   const [favorite, setFavorite] = useState(false);
+  const { data } = props;
   const handleDirectPlayQuiz = () => {
     navigate(`/quiz/id=${uuidv4()}`);
   };
@@ -25,9 +26,12 @@ const QuizItem = () => {
         <Card
           style={{ cursor: "default" }}
           cover={
-            <img
+            <Image
               alt='example'
-              src='https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png'
+              src={data.urlImg}
+              preview={false}
+              width={315}
+              height={210}
             />
           }
           hoverable
@@ -69,7 +73,7 @@ const QuizItem = () => {
                   className='hover-underline highlight-first-letter'
                   style={{ color: "red" }}
                 >
-                  Admin
+                  {data.author}
                 </Text>
               </div>
             }
@@ -80,10 +84,10 @@ const QuizItem = () => {
                   handleDirectPlayQuiz();
                 }}
               >
-                Python Programming Warm-Up Python Programming Warm-Up
+                {data.title}
               </Text>
             }
-            description='15.6k plays • 22.2k players'
+            description={`${data.description.play} plays • ${data.description.player} players`}
           />
           <div
             style={{
@@ -96,7 +100,7 @@ const QuizItem = () => {
               borderRadius: 4,
             }}
           >
-            {11} questions
+            {data.description.numberQuestion} questions
           </div>
         </Card>
       </Badge.Ribbon>

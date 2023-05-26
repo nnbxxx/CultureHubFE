@@ -23,84 +23,71 @@ const baseURL = import.meta.env.VITE_BACK_END_URL;
 
 const dataBlog = [
   {
-    title:
-      "Higher education faculty discover new ways to create engaging review sessions at the Kahoot! EDU Meetup!",
+    title: "Hồ Gươm Hà Nội – Vẻ đẹp cổ kính giữa lòng thủ đô",
     description:
-      "At our first higher education meetup last week we heard from hundreds of higher ed faculty around the world using Kahoot! in their courses for engaging review and exam prep.",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      "Hồ Hoàn Kiếm (Hồ Gươm) nằm ngay trung tâm quận Hoàn Kiếm nên rất thuận tiện cho du khách tìm đến ngắm cảnh và khám phá nhiều trải nghiệm thú vị vào bất cứ thời điểm nào trong ngày.",
+    urlImg: "../../../public/Blog/1.png",
   },
   {
-    title:
-      "Gamified learning experiences were the main character at this year’s Kahoot! EDU Meetup!",
+    title: "Lịch Sử Hồ Hoàn Kiếm",
     description:
-      "Yesterday, we learned why teachers around the world are gaming and learning with their students to boost engagement and learning retention!",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      "Hồ Hoàn Kiếm không chỉ đơn thuần là địa điểm du lịch hút khách, mà nơi đây còn là di tích đã trải qua biết bao thăng trầm lịch sử của mảnh đất Hà Thành. Hồ Hoàn Kiếm là một trong những biểu tượng của thủ đô, chỉ cần nhắc đến là nghĩ ngay đến Hà Nội.",
+    urlImg: "../../../public/Blog/2.png",
   },
   {
-    title:
-      "Bring a new level of powerful pedagogy to classrooms with Kahoot!’s game modes",
+    title: "Đôi Điều Về Rùa Hồ Hoàn Kiếm ",
     description:
-      "Disguise content learning in a game-oriented, student-centered dynamic with all new game modes on Kahoot!",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      "Rùa hồ Hoàn Kiếm có tên gọi khoa học là Rafetus Leloii hay Rafetus Vietnamensis thuộc họ ba ba, có kích thước khá lớn. Trước đây rùa hồ Hoàn Kiếm có 4 cá thể nhưng đến hiện tại tất cả đều đã chết. Cũng có thông tin cho rằng vẫn còn khoảng 5 cá thể trong hồ nhưng điều này chưa được chứng minh.",
+    urlImg: "../../../public/Blog/3.png",
   },
   {
-    title: "Celebrating World Teachers’ Day with Kahoot!",
+    title: "Hồ Hoàn Kiếm Có Gì Chơi?",
     description:
-      "Thanks for an awesome year of milestones and memories! We appreciate you, teachers!",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      "Hồ Hoàn Kiếm Hà Nội có gì chơi? Đây luôn là địa điểm thu hút không chỉ du khách thập phương mà còn cả những cư dân địa phương. Thật là thiếu sót nếu bạn bỏ qua những địa danh nổi tiếng sau:",
+    urlImg: "../../../public/Blog/4.png",
   },
   {
-    title:
-      "Student-centered learning was front and center at the Kahoot! EDU Fall Meetup 2022",
+    title: "Rong ruổi đường ven biển Việt Nam từ Bà Rịa tới Lăng Cô Huế",
     description:
-      "Teachers from around the world gathered yesterday to learn about new approaches to student-centered learning from shared teacher stories, Kahoot! ambassadors, and new Kahoot! feature demos!",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      "Với cung đường biển này bạn có thể đi trong vòng 7 ngày hoặc 10 ngày, càng dài ngày thì khám phá được nhiều sức khỏe cũng sẽ đảm bảo hơn, đường biển xuất phát từ Vũng Tàu đến Lăng Cô. Mình sẽ chia từng chặng cho các bạn tiện việc chọn cung phù hợp với sức khỏe và túi tiền của mình.",
+    urlImg: "../../../public/Blog/5.png",
   },
 ];
 const dataQuiz = [
   {
-    title: "Python Programming Warm-Up",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    title: " Cố Đô Huế ",
+    urlImg: "../../../public/Quiz/1.avif",
     description: {
-      play: "5.9k",
-      player: "21.4k",
-      numberQuestion: 11,
+      play: "7",
+      player: "3",
+      numberQuestion: 5,
     },
   },
   {
-    title: "Ready, Set. . . Draw!",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    title: "Hồ Hoàn Kiếm Hà Nội",
+    urlImg: "../../../public/Quiz/2.avif",
     description: {
-      play: "5.9k",
-      player: "21.1k",
-      numberQuestion: 10,
+      play: "9",
+      player: "5",
+      numberQuestion: 5,
     },
   },
   {
-    title: "What's the Weather?",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    title: "Lăng chủ tịch Hồ Chí Minh",
+    urlImg: "../../../public/Quiz/3.avif",
     description: {
-      play: "5.4k",
-      player: "27.5k",
-      numberQuestion: 8,
+      play: "13",
+      player: "5",
+      numberQuestion: 5,
     },
   },
   {
-    title: "Python Programming Warm-Up",
-    urlImg:
-      "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    title: "Phố cổ Hội An",
+    urlImg: "../../../public/Quiz/4.avif",
     description: {
-      play: "556",
-      player: "4k",
-      numberQuestion: 16,
+      play: "5",
+      player: "5",
+      numberQuestion: 5,
     },
   },
 ];
