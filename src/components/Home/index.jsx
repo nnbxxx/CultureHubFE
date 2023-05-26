@@ -20,43 +20,42 @@ import Blog from "./Blog";
 import QuizItem from "./QuizItem";
 import { convertSlug } from "../ConvertSlug";
 const baseURL = import.meta.env.VITE_BACK_END_URL;
-
 const dataBlog = [
   {
     title: "Hồ Gươm Hà Nội – Vẻ đẹp cổ kính giữa lòng thủ đô",
     description:
       "Hồ Hoàn Kiếm (Hồ Gươm) nằm ngay trung tâm quận Hoàn Kiếm nên rất thuận tiện cho du khách tìm đến ngắm cảnh và khám phá nhiều trải nghiệm thú vị vào bất cứ thời điểm nào trong ngày.",
-    urlImg: "../../../public/Blog/1.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/1.png`,
   },
   {
     title: "Lịch Sử Hồ Hoàn Kiếm",
     description:
       "Hồ Hoàn Kiếm không chỉ đơn thuần là địa điểm du lịch hút khách, mà nơi đây còn là di tích đã trải qua biết bao thăng trầm lịch sử của mảnh đất Hà Thành. Hồ Hoàn Kiếm là một trong những biểu tượng của thủ đô, chỉ cần nhắc đến là nghĩ ngay đến Hà Nội.",
-    urlImg: "../../../public/Blog/2.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/2.png`,
   },
   {
     title: "Đôi Điều Về Rùa Hồ Hoàn Kiếm ",
     description:
       "Rùa hồ Hoàn Kiếm có tên gọi khoa học là Rafetus Leloii hay Rafetus Vietnamensis thuộc họ ba ba, có kích thước khá lớn. Trước đây rùa hồ Hoàn Kiếm có 4 cá thể nhưng đến hiện tại tất cả đều đã chết. Cũng có thông tin cho rằng vẫn còn khoảng 5 cá thể trong hồ nhưng điều này chưa được chứng minh.",
-    urlImg: "../../../public/Blog/3.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/3.png`,
   },
   {
     title: "Hồ Hoàn Kiếm Có Gì Chơi?",
     description:
       "Hồ Hoàn Kiếm Hà Nội có gì chơi? Đây luôn là địa điểm thu hút không chỉ du khách thập phương mà còn cả những cư dân địa phương. Thật là thiếu sót nếu bạn bỏ qua những địa danh nổi tiếng sau:",
-    urlImg: "../../../public/Blog/4.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/4.png`,
   },
   {
     title: "Rong ruổi đường ven biển Việt Nam từ Bà Rịa tới Lăng Cô Huế",
     description:
       "Với cung đường biển này bạn có thể đi trong vòng 7 ngày hoặc 10 ngày, càng dài ngày thì khám phá được nhiều sức khỏe cũng sẽ đảm bảo hơn, đường biển xuất phát từ Vũng Tàu đến Lăng Cô. Mình sẽ chia từng chặng cho các bạn tiện việc chọn cung phù hợp với sức khỏe và túi tiền của mình.",
-    urlImg: "../../../public/Blog/5.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/5.png`,
   },
 ];
 const dataQuiz = [
   {
     title: " Cố Đô Huế ",
-    urlImg: "../../../public/Quiz/1.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/1.avif`,
     description: {
       play: "7",
       player: "3",
@@ -65,7 +64,8 @@ const dataQuiz = [
   },
   {
     title: "Hồ Hoàn Kiếm Hà Nội",
-    urlImg: "../../../public/Quiz/2.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/2.avif`,
+
     description: {
       play: "9",
       player: "5",
@@ -74,7 +74,7 @@ const dataQuiz = [
   },
   {
     title: "Lăng chủ tịch Hồ Chí Minh",
-    urlImg: "../../../public/Quiz/3.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/3.avif`,
     description: {
       play: "13",
       player: "5",
@@ -83,7 +83,7 @@ const dataQuiz = [
   },
   {
     title: "Phố cổ Hội An",
-    urlImg: "../../../public/Quiz/4.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/4.avif`,
     description: {
       play: "5",
       player: "5",

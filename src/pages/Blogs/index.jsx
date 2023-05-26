@@ -39,7 +39,7 @@ const colors = [
 const data = [
   {
     color: colors[Math.floor(Math.random() * 15)],
-    urlImg: "../../../public/Blog/1.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/1.png`,
     author: "Admin",
     avatarAuthor: "https://xsgames.co/randomusers/avatar.php?g=pixel",
     createAt: "March 24, 2023",
@@ -49,7 +49,7 @@ const data = [
   },
   {
     color: colors[Math.floor(Math.random() * 15)],
-    urlImg: "../../../public/Blog/2.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/2.png`,
     author: "Admin",
     avatarAuthor: "https://xsgames.co/randomusers/avatar.php?g=pixel",
     createAt: "March 24, 2023",
@@ -59,7 +59,7 @@ const data = [
   },
   {
     color: colors[Math.floor(Math.random() * 15)],
-    urlImg: "../../../public/Blog/3.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/3.png`,
     author: "Admin",
     avatarAuthor: "https://xsgames.co/randomusers/avatar.php?g=pixel",
     createAt: "March 24, 2023",
@@ -69,7 +69,7 @@ const data = [
   },
   {
     color: colors[Math.floor(Math.random() * 15)],
-    urlImg: "../../../public/Blog/4.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/4.png`,
     author: "Admin",
     avatarAuthor: "https://xsgames.co/randomusers/avatar.php?g=pixel",
     createAt: "March 24, 2023",
@@ -79,7 +79,7 @@ const data = [
   },
   {
     color: colors[Math.floor(Math.random() * 15)],
-    urlImg: "../../../public/Blog/5.png",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Blog/5.png`,
     author: "Admin",
     avatarAuthor: "https://xsgames.co/randomusers/avatar.php?g=pixel",
     createAt: "March 24, 2023",
@@ -111,7 +111,7 @@ const BlogsPage = () => {
           }}
         >
           <source
-            src='../../../public/Video/video.mp4'
+            src={`${import.meta.env.VITE_BACK_END_URL}/images/Video/video.mp4`}
             type='video/mp4'
           ></source>
         </video>

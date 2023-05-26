@@ -163,7 +163,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/1.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/1.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -197,7 +199,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/1.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/2.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -278,7 +282,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/3.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/3.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -321,7 +327,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/4.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/4.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -358,7 +366,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/5.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/5.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -404,7 +414,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/6.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/6.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -441,7 +453,9 @@ const BlogPage = () => {
                 <Image
                   width={1028}
                   height={580}
-                  src='../../../public/Blog/BlogMain/7.jpg'
+                  src={`${
+                    import.meta.env.VITE_BACK_END_URL
+                  }/images/Blog/BlogMain/7.jpg`}
                   preview={false}
                   style={{ padding: "10px 0" }}
                 />
@@ -510,7 +524,9 @@ const BlogPage = () => {
                     cover={
                       <Image
                         alt='example'
-                        src='../../../public/Blog/2.png'
+                        src={`${
+                          import.meta.env.VITE_BACK_END_URL
+                        }/images/Blog/2.png`}
                         preview={false}
                         height={185}
                       />
@@ -605,7 +621,9 @@ const BlogPage = () => {
                     cover={
                       <Image
                         alt='example'
-                        src='../../../public/Blog/3.png'
+                        src={`${
+                          import.meta.env.VITE_BACK_END_URL
+                        }/images/Blog/3.png`}
                         preview={false}
                         height={185}
                       />
@@ -701,7 +719,9 @@ const BlogPage = () => {
                     cover={
                       <Image
                         alt='example'
-                        src='../../../public/Blog/4.png'
+                        src={`${
+                          import.meta.env.VITE_BACK_END_URL
+                        }/images/Blog/4.png`}
                         preview={false}
                         height={185}
                       />

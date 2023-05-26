@@ -180,7 +180,12 @@ const Quiz = () => {
                   style={{ cursor: "default", position: "relative" }}
                   cover={
                     <>
-                      <img alt='example' src='../../../public/Quiz/2.avif' />
+                      <img
+                        alt='example'
+                        src={`${
+                          import.meta.env.VITE_BACK_END_URL
+                        }/images/Quiz/2.avif`}
+                      />
                     </>
                   }
                   actions={[

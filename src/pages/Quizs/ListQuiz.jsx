@@ -38,7 +38,7 @@ const itemsTab = [
 const data = [
   {
     title: " Cố Đô Huế ",
-    urlImg: "../../../public/Quiz/1.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/1.avif`,
     author: "Admin",
     description: {
       play: "7",
@@ -48,7 +48,7 @@ const data = [
   },
   {
     title: "Hồ Hoàn Kiếm Hà Nội",
-    urlImg: "../../../public/Quiz/2.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/2.avif`,
     author: "Admin",
     description: {
       play: "9",
@@ -58,7 +58,7 @@ const data = [
   },
   {
     title: "Lăng chủ tịch Hồ Chí Minh",
-    urlImg: "../../../public/Quiz/3.avif",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/3.avif`,
     author: "Admin",
     description: {
       play: "13",
@@ -68,7 +68,7 @@ const data = [
   },
   {
     title: "Phố cổ Hội An",
-    urlImg: "../../../public/Quiz/4.jpg",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/4.avif`,
     author: "Admin",
     description: {
       play: "5",
@@ -78,7 +78,8 @@ const data = [
   },
   {
     title: "Đền Ngọc Sơn",
-    urlImg: "../../../public/Quiz/5.jpg",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/5.jpg`,
+
     author: "Admin",
     description: {
       play: "5",
@@ -88,7 +89,7 @@ const data = [
   },
   {
     title: "Tháp Chàm",
-    urlImg: "../../../public/Quiz/6.jpg",
+    urlImg: `${import.meta.env.VITE_BACK_END_URL}/images/Quiz/6.jpg`,
     author: "Admin",
     description: {
       play: "5",
