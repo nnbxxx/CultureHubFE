@@ -81,7 +81,7 @@ const ModalEditBook = (props) => {
       category
     );
     if (res && res.data) {
-      message.success("Update new Book Successful");
+      message.success("Update new Product Successful");
       form.resetFields();
       setDataSlider([]);
       setDataThumbnail([]);

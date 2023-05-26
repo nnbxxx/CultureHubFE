@@ -73,7 +73,7 @@ const ModalAddBook = (props) => {
       category
     );
     if (res && res.data) {
-      message.success("Create new Book Successful");
+      message.success("Create new Product Successful");
       form.resetFields();
       setDataSlider([]);
       setDataThumbnail([]);
