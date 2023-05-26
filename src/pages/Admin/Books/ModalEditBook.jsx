@@ -229,10 +229,13 @@ const ModalEditBook = (props) => {
             <Col span={12}>
               <Form.Item
                 labelCol={{ span: 24 }}
-                label='Name Book'
+                label='Name Product'
                 name='mainText'
                 rules={[
-                  { required: true, message: "Please input the name of Book!" },
+                  {
+                    required: true,
+                    message: "Please input the name of Product!",
+                  },
                 ]}
               >
                 <Input />
@@ -246,7 +249,7 @@ const ModalEditBook = (props) => {
                 rules={[
                   {
                     required: true,
-                    message: "Please input the Author of Book!",
+                    message: "Please input the Author of Product!",
                   },
                 ]}
               >
@@ -261,7 +264,7 @@ const ModalEditBook = (props) => {
                 rules={[
                   {
                     required: true,
-                    message: "Please input the Price of Book!",
+                    message: "Please input the Price of Product!",
                   },
                 ]}
               >
@@ -283,7 +286,7 @@ const ModalEditBook = (props) => {
                 rules={[
                   {
                     required: true,
-                    message: "Please input the Category of Book!",
+                    message: "Please input the Category of Product!",
                   },
                 ]}
               >
@@ -303,7 +306,7 @@ const ModalEditBook = (props) => {
                 rules={[
                   {
                     required: true,
-                    message: "Please input the Quantity of Book!",
+                    message: "Please input the Quantity of Product!",
                   },
                 ]}
               >
@@ -318,7 +321,7 @@ const ModalEditBook = (props) => {
                 rules={[
                   {
                     required: true,
-                    message: "Please input the Sold of Book!",
+                    message: "Please input the Sold of Product!",
                   },
                 ]}
                 initialValue={0}

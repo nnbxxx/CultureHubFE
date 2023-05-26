@@ -161,7 +161,7 @@ const ModalAddBook = (props) => {
   return (
     <>
       <Modal
-        title='Add New Book'
+        title='Add New Product'
         open={open}
         onOk={() => {
           form.submit();

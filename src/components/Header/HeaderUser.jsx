@@ -107,7 +107,7 @@ const HeaderUser = (props) => {
   let carts = useSelector((state) => state.order.carts);
   const handleDirectDetailBook = (book) => {
     const slug = convertSlug(book.mainText);
-    navigate(`/book/${slug}?id=${book._id}`);
+    navigate(`/product/${slug}?id=${book._id}`);
   };
 
   const contentPopover = (
