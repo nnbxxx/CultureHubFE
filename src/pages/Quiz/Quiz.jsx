@@ -432,11 +432,18 @@ const Quiz = () => {
           navigate("/quiz");
         }}
         footer={null}
+        maskClosable={false}
       >
         <Result
           status='success'
           title='Successfully Quiz!'
-          subTitle={<>You get 100/100</>}
+          subTitle={
+            <>
+              <div>Total Question: 11</div>
+              <div>Correct Question: 11</div>
+              <div>Score : 11</div>
+            </>
+          }
           extra={[
             <Button
               type='primary'

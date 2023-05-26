@@ -156,7 +156,7 @@ const Home = (props) => {
   const navigate = useNavigate();
   const handleDirectDetailBook = (book) => {
     const slug = convertSlug(book.mainText);
-    navigate(`/book/${slug}?id=${book._id}`);
+    navigate(`/product/${slug}?id=${book._id}`);
   };
   useEffect(() => {
     fetchListBook();

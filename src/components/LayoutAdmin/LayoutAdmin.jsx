@@ -80,7 +80,7 @@ const LayoutAdmin = () => {
       setActiveMenu("sub1");
     }
     if (e.key === "3") {
-      navigate("/admin/book");
+      navigate("/admin/product");
       setActiveMenu("sub2");
     }
     if (e.key === "4") {
@@ -131,7 +131,8 @@ const LayoutAdmin = () => {
   useEffect(() => {
     if (window.location.pathname.includes("/admin")) setActiveMenu("1");
     if (window.location.pathname.includes("/admin/user")) setActiveMenu("sub1");
-    if (window.location.pathname.includes("/admin/book")) setActiveMenu("sub2");
+    if (window.location.pathname.includes("/admin/product"))
+      setActiveMenu("sub2");
     if (window.location.pathname.includes("/admin/order")) setActiveMenu("4");
     if (window.location.pathname.includes("/admin/blog")) setActiveMenu("5");
   }, []);

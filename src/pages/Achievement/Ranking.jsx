@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Card, Table } from "antd";
+import { Col, Card, Table, message } from "antd";
 import { v4 as uuidv4 } from "uuid";
 import { BsTrophyFill } from "react-icons/bs";
 
@@ -36,6 +36,9 @@ const Ranking = (props) => {
                 cursor: "pointer",
                 color: "#0645ad",
                 fontSize: 12.5,
+              }}
+              onClick={() => {
+                message.info("Coming soon ...");
               }}
             >
               {`View All >>>`}
