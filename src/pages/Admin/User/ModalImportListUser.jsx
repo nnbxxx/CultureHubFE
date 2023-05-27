@@ -15,7 +15,7 @@ const dummyRequest = ({ file, onSuccess }) => {
 const ModalImportFile = (props) => {
   const { open, setOpen } = props;
   const [isImport, setIsImport] = useState(false);
-  const [dataExcel, setdataExcel] = useState([]);
+  const [dataExcel, setDataExcel] = useState([]);
   const handleOk = async (e) => {
     // console.log(e);
     let data = dataExcel.map((item) => {
@@ -36,12 +36,12 @@ const ModalImportFile = (props) => {
         duration: 3,
       });
     }
-    setdataExcel([]);
+    setDataExcel([]);
     setIsImport(false);
   };
   const handleCancel = (e) => {
     // console.log(e);
-    setdataExcel([]);
+    setDataExcel([]);
     setOpen(false);
     setIsImport(false);
   };
@@ -85,14 +85,18 @@ const ModalImportFile = (props) => {
             let data = new Uint8Array(reader.result);
             let workbook = XLSX.read(data, { type: "array" });
             // find the name of your sheet in the workbook first
-            let worksheet = workbook.Sheets[workbook.SheetNames[0]];
+            let sheet = workbook.Sheets[workbook.SheetNames[0]];
             // convert to json format
-            const jsonData = XLSX.utils.sheet_to_json(worksheet, {
-              range: 1,
+            const jsonData = XLSX.utils.sheet_to_json(sheet, {
               header: ["fullName", "email", "phone"],
+              range: 1,
             });
+            console.log(
+              "🚀 ~ file: ModalImportListUser.jsx:99 ~ onChange ~ jsonData:",
+              jsonData
+            );
             if (jsonData && jsonData.length > 0) {
-              setdataExcel(jsonData);
+              setDataExcel(jsonData);
             }
           };
         }
